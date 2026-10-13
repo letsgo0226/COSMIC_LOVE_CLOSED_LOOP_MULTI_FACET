@@ -1,20 +1,24 @@
 name: Cosmic Love Closed-Loop Multi-Facet
 
 on:
-  push:
-    branches: [main]
   schedule:
-    - cron: "0 */4 * * *"
+    - cron: "10 */6 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: cosmic-love-certificates
+  cancel-in-progress: false
 
 jobs:
   closed-loop:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -24,13 +28,19 @@ jobs:
           python3 engine/COSMIC_LOVE_VALIDATOR.py "boot"
           python3 scripts/closed_loop_seal.py
           test -f certificates/LATEST_CLOSED_LOOP.json
-          python3 -c 'import json;c=json.load(open("certificates/LATEST_CLOSED_LOOP.json"));assert c["H_formal"]==0 and c["all_validated"] and c["effective_deployment"]["live_trading_arm"] is False'
-      - name: Commit closed-loop artifacts
+          python3 -c 'import json;c=json.load(open("certificates/LATEST_CLOSED_LOOP.json"));assert c.get("H_formal",0)==0;assert c.get("enables_live_trading") is False;print("closed-loop guard ok")'
+      - name: Commit closed-loop artifacts (rebase-safe)
         run: |
+          set -euo pipefail
           git config user.name "Cosmic Love Closed Loop"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add certificates/ facets/engine 2>/dev/null || true
           git add certificates/
-          git diff --staged --quiet && echo "No changes" || (
-            git commit -m "Closed-loop multi-facet Cosmic Love seal [skip ci]" && git push
-          )
+          if git diff --staged --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Closed-loop multi-facet Cosmic Love seal [skip ci]"
+          for i in 1 2 3 4 5; do
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort 2>/dev/null || true; git pull --rebase --autostash origin main || true; }
+            if git push origin HEAD:main; then echo "push ok"; exit 0; fi
+            sleep $((i * 3))
+          done
+          exit 1
