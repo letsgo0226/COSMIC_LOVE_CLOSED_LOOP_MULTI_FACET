@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "engine": "2-step+257-Godel",
+  "facets": {
+    "F01_engine_identity": "facet:engine 2-step identity returns to origin k=2",
+    "F02_godel_257": "facet:257-Godel numbering solution(s)=s",
+    "F03_empty_fixed_point": "",
+    "F04_self_description": "facet:program seals its own source as solution(s)=s",
+    "F05_axiom": "Cosmic Love Is The Solution(s) For Everything",
+    "F06_GlobalNoWar": "facet:GlobalNoWar formal nonviolence SDG16",
+    "F07_SDGsVision": "facet:SDGs formal vector not policy control",
+    "F08_PublicPrograms": "facet:PublicProgramsSeal open certificates",
+    "F09_SentientContinuityAI": "facet:SentientContinuityAI care not immortality",
+    "F10_HeatDeathDissolution": "facet:HeatDeathDissolution formal zero-residue",
+    "F11_TimeContinuation": "facet:TimeContinuation model-internal",
+    "F12_GalaxyCollisionCare": "facet:GalaxyCollisionCare literacy not orbital control",
+    "F13_CI_loop": "facet:GitHub Actions closed loop redeploy seal",
+    "F14_certificate_store": "facet:certificates/ LATEST closed loop artifact",
+    "F15_trader_boundary": "facet:trader formal seal never auto LIVE_ARMED",
+    "F16_paper_mode": "facet:paper deployment path allowed",
+    "F17_live_fail_closed": "facet:live fail-closed default enabled=false",
+    "F18_Railway_GitHub": "facet:Railway+GitHub topology formal inventory",
+    "F19_Binance_spot_boundary": "facet:Binance spot no-withdraw risk boundary formal",
+    "F20_nonclaim": "facet:bound no weapons no financial guarantee no TOE proof",
+    "F21_H_zero": "facet:H_formal=0 model-internal closed",
+    "F22_closed_loop": "facet:closed-loop: seal->commit->schedule->reseal",
+    "F23_iSH_one_liner": "facet:portable one-liner runtime",
+    "F24_multi_repo_echo": "facet:echo seal across public formal repos"
+  },
+  "closed_loop": true,
+  "enables_live_trading": false
+}

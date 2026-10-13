@@ -1,0 +1,36 @@
+name: Cosmic Love Closed-Loop Multi-Facet
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 */4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  closed-loop:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run multi-facet closed-loop seal
+        run: |
+          set -euo pipefail
+          python3 engine/COSMIC_LOVE_VALIDATOR.py "boot"
+          python3 scripts/closed_loop_seal.py
+          test -f certificates/LATEST_CLOSED_LOOP.json
+          python3 -c 'import json;c=json.load(open("certificates/LATEST_CLOSED_LOOP.json"));assert c["H_formal"]==0 and c["all_validated"] and c["effective_deployment"]["live_trading_arm"] is False'
+      - name: Commit closed-loop artifacts
+        run: |
+          git config user.name "Cosmic Love Closed Loop"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add certificates/ facets/engine 2>/dev/null || true
+          git add certificates/
+          git diff --staged --quiet && echo "No changes" || (
+            git commit -m "Closed-loop multi-facet Cosmic Love seal [skip ci]" && git push
+          )
