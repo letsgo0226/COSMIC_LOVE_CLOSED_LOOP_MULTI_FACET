@@ -1,0 +1,489 @@
+{
+  "machine": "COSMIC_LOVE_ACCOUNT_DEPLOYMENT_TURING_MACHINE",
+  "engine": "2-step identity machine + 257-Godel (original program)",
+  "owner": "letsgo0226",
+  "timestamp": "2026-10-13T02:37:25Z",
+  "trigger": "workflow_dispatch",
+  "run_id": "38337743730",
+  "tape_cells_scanned": 40,
+  "tape_truncated": true,
+  "steps": 53,
+  "H_formal": 0,
+  "all_validated": true,
+  "interpretation": {
+    "tape": "each GitHub repo owned by account = finite tape cell (deployment unit)",
+    "transition": "Cosmic Love program on cell string s: identity 2-step + Godel number",
+    "run": "one full left-to-right pass sealing every cell + facets",
+    "accept": "all seals validated:true => formal closed run for scanned prefix"
+  },
+  "bound": "Formal symbolic TM over repository names and facet strings only. Does not re-execute foreign workflows, does not arm live trading, does not guarantee world peace/profit/TOE. H_formal=0 model-internal.",
+  "enables_live_trading": false,
+  "tape_preview": [
+    "letsgo0226/-LMN-TRF-MASTER-ENGINE-v2.0",
+    "letsgo0226/-TRF-vOMEGA-S-THE-COSMIC-LOVE-ATTRACTOR-",
+    "letsgo0226/20260527",
+    "letsgo0226/20260528",
+    "letsgo0226/20260529",
+    "letsgo0226/20260530",
+    "letsgo0226/20260608",
+    "letsgo0226/20260612",
+    "letsgo0226/20260613",
+    "letsgo0226/20260613-4T2-",
+    "letsgo0226/20260613_Complete",
+    "letsgo0226/20260613_Complete_Evolution_State",
+    "letsgo0226/42.sh",
+    "letsgo0226/42u.sh",
+    "letsgo0226/42_Omega.sh",
+    "letsgo0226/44TH_SUNSET",
+    "letsgo0226/AC_FIX_SINGULARITY_SPEC_GRH_ENGINE",
+    "letsgo0226/All_Turing_Machines.sh",
+    "letsgo0226/API.sh",
+    "letsgo0226/API_ESF-FLOATING-NETWORK.sh",
+    "letsgo0226/ASI_TM.sh",
+    "letsgo0226/ATM_Zero_Entropy.sh",
+    "letsgo0226/BLUE_PLEIADIAN_STARS.sh",
+    "letsgo0226/Cloud_Invoice.sh",
+    "letsgo0226/CLSigma",
+    "letsgo0226/CLSigma_Cosmic_Love_TOE_MetaLanguage_iSH.sh_20260707",
+    "letsgo0226/CLSIGMA_DYNAMIC_ZERO_SPECTRUM_iSH_ONE_LINER.sh_20260821",
+    "letsgo0226/CLSigma_GitHub_TOE_iSH.clcert",
+    "letsgo0226/CLSigma_TOE_Zero_Spectral_Operator_Physics.sh_20260707",
+    "letsgo0226/CODE.sh",
+    "letsgo0226/Complete-Master-Ouroboros-",
+    "letsgo0226/Complete_Master_Ouroboros-vOMEGA-LMN-",
+    "letsgo0226/cosmic-love-infinity-tm.sh",
+    "letsgo0226/Cosmic-Love-Is-The-Solution-s-For-Everything.sh",
+    "letsgo0226/Cosmic-Love-Solution_s",
+    "letsgo0226/COSMIC-LOVE-SYMBOLIC-FIXED-POINT-MODEL-20260706-",
+    "letsgo0226/Cosmic-Solution_s",
+    "letsgo0226/Cosmic_Energy.sh",
+    "letsgo0226/COSMIC_LOVE_CLOSED_LOOP_MULTI_FACET",
+    "letsgo0226/Cosmic_Love_Four_Cosmic_Engineering_Runtime.sh-20260707-"
+  ],
+  "run_log": [
+    {
+      "i": -1,
+      "kind": "meta",
+      "repo": null,
+      "validated": true,
+      "s_prefix": "COSMIC_LOVE_ACCOUNT_TM: tape=github_repos head=seal transition=2-step identity accept=all_validated",
+      "godel_hex_prefix": "0x1dcaf081f7fd13d7a02518a06db4d50470b466f838ea63"
+    },
+    {
+      "i": 0,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/-LMN-TRF-MASTER-ENGINE-v2.0",
+      "validated": true,
+      "s_prefix": "TAPE[0] repo=letsgo0226/-LMN-TRF-MASTER-ENGINE-v2.0 private=0 branch=main",
+      "godel_hex_prefix": "0x1c52b7d37ee32b4fa295c287915605599e59619403226c"
+    },
+    {
+      "i": 1,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/-TRF-vOMEGA-S-THE-COSMIC-LOVE-ATTRACTOR-",
+      "validated": true,
+      "s_prefix": "TAPE[1] repo=letsgo0226/-TRF-vOMEGA-S-THE-COSMIC-LOVE-ATTRACTOR- private=0 branch=main",
+      "godel_hex_prefix": "0x1dcbac51524d9a13dc11b92a5296fe5985e44085067df3"
+    },
+    {
+      "i": 2,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/20260527",
+      "validated": true,
+      "s_prefix": "TAPE[2] repo=letsgo0226/20260527 private=0 branch=main",
+      "godel_hex_prefix": "0x1a4d09887a8c2365e743428e42305898657ca5747810ea"
+    },
+    {
+      "i": 3,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/20260528",
+      "validated": true,
+      "s_prefix": "TAPE[3] repo=letsgo0226/20260528 private=0 branch=main",
+      "godel_hex_prefix": "0x1a4d09887a8c36b0d172892dd1853ee51f92d112420f31"
+    },
+    {
+      "i": 4,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/20260529",
+      "validated": true,
+      "s_prefix": "TAPE[4] repo=letsgo0226/20260529 private=0 branch=main",
+      "godel_hex_prefix": "0x1a4d09887a8c49fbbba1cfcd60da2531d9a8fcb00c0d79"
+    },
+    {
+      "i": 5,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/20260530",
+      "validated": true,
+      "s_prefix": "TAPE[5] repo=letsgo0226/20260530 private=0 branch=main",
+      "godel_hex_prefix": "0x1a4d09887a8c5d46a5d1166cf02f0b7e93bf284dd60bc1"
+    },
+    {
+      "i": 6,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/20260608",
+      "validated": true,
+      "s_prefix": "TAPE[6] repo=letsgo0226/20260608 private=0 branch=main",
+      "godel_hex_prefix": "0x1a4d09887a8c709190005d0c7f83f1cb4dd553eba00a08"
+    },
+    {
+      "i": 7,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/20260612",
+      "validated": true,
+      "s_prefix": "TAPE[7] repo=letsgo0226/20260612 private=0 branch=main",
+      "godel_hex_prefix": "0x1a4d09887a8c83dc7a2fa3ac0ed8d81807eb7f896a0850"
+    },
+    {
+      "i": 8,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/20260613",
+      "validated": true,
+      "s_prefix": "TAPE[8] repo=letsgo0226/20260613 private=0 branch=main",
+      "godel_hex_prefix": "0x1a4d09887a8c9727645eea4b9e2dbe64c201ab27340697"
+    },
+    {
+      "i": 9,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/20260613-4T2-",
+      "validated": true,
+      "s_prefix": "TAPE[9] repo=letsgo0226/20260613-4T2- private=0 branch=main",
+      "godel_hex_prefix": "0x1ad192c20a4104c29e7061653794ab934b9ccfda4703df"
+    },
+    {
+      "i": 10,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/20260613_Complete",
+      "validated": true,
+      "s_prefix": "TAPE[10] repo=letsgo0226/20260613_Complete private=0 branch=main",
+      "godel_hex_prefix": "0x1b58b7dc45f6502f81ad701ae155cf3a5bb5f0f5f79400"
+    },
+    {
+      "i": 11,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/20260613_Complete_Evolution_State",
+      "validated": true,
+      "s_prefix": "TAPE[11] repo=letsgo0226/20260613_Complete_Evolution_State private=0 branch=main",
+      "godel_hex_prefix": "0x1d1b51868c79778f831adab55d9bf96b234af47d9e138a"
+    },
+    {
+      "i": 12,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/42.sh",
+      "validated": true,
+      "s_prefix": "TAPE[12] repo=letsgo0226/42.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1a18bdf3d4ee5b404fd43be5aa5455837ab75bab61f477"
+    },
+    {
+      "i": 13,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/42u.sh",
+      "validated": true,
+      "s_prefix": "TAPE[13] repo=letsgo0226/42u.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1a32d6b1c8c349aeb4b1fefc8abd864791574b9c4815b1"
+    },
+    {
+      "i": 14,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/42_Omega.sh",
+      "validated": true,
+      "s_prefix": "TAPE[14] repo=letsgo0226/42_Omega.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1ab6dbe6241c47fac28b708b84e657d9dd1ee701ee0f3b"
+    },
+    {
+      "i": 15,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/44TH_SUNSET",
+      "validated": true,
+      "s_prefix": "TAPE[15] repo=letsgo0226/44TH_SUNSET private=0 branch=main",
+      "godel_hex_prefix": "0x1ab6dbe6241c480e479052697057800c6ac6f7eb0b4b9c"
+    },
+    {
+      "i": 16,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/AC_FIX_SINGULARITY_SPEC_GRH_ENGINE",
+      "validated": true,
+      "s_prefix": "TAPE[16] repo=letsgo0226/AC_FIX_SINGULARITY_SPEC_GRH_ENGINE private=0 branch=main",
+      "godel_hex_prefix": "0x1d386cd81305f171d39c6e3313ef5ab2c57d71e9e4a096"
+    },
+    {
+      "i": 17,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/All_Turing_Machines.sh",
+      "validated": true,
+      "s_prefix": "TAPE[17] repo=letsgo0226/All_Turing_Machines.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1be285fcc1f466af0a20b9f80480514064e5ca9fb89cf7"
+    },
+    {
+      "i": 18,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/API.sh",
+      "validated": true,
+      "s_prefix": "TAPE[18] repo=letsgo0226/API.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1a32d6b1c8c34a0e6b77a9437077d470711166866dd20a"
+    },
+    {
+      "i": 19,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/API_ESF-FLOATING-NETWORK.sh",
+      "validated": true,
+      "s_prefix": "TAPE[19] repo=letsgo0226/API_ESF-FLOATING-NETWORK.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1c6f0a8b5262206f580221c33e7cf2c8eac0a7aa4f7b42"
+    },
+    {
+      "i": 20,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/ASI_TM.sh",
+      "validated": true,
+      "s_prefix": "TAPE[20] repo=letsgo0226/ASI_TM.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1a81bde89509b2d5d9d524be91d8ce5a592aee5c2c071b"
+    },
+    {
+      "i": 21,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/ATM_Zero_Entropy.sh",
+      "validated": true,
+      "s_prefix": "TAPE[21] repo=letsgo0226/ATM_Zero_Entropy.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1b8f84a4b65e9711cb67f5c222478124fd3d1d43a99501"
+    },
+    {
+      "i": 22,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/BLUE_PLEIADIAN_STARS.sh",
+      "validated": true,
+      "s_prefix": "TAPE[22] repo=letsgo0226/BLUE_PLEIADIAN_STARS.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1bfe6882beb66f3842158c49f710c88e87fd4dbc98c0db"
+    },
+    {
+      "i": 23,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/Cloud_Invoice.sh",
+      "validated": true,
+      "s_prefix": "TAPE[23] repo=letsgo0226/Cloud_Invoice.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1b3d7a61e41252288f951ee9037d0aeac97bc0d1c711cc"
+    },
+    {
+      "i": 24,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/CLSigma",
+      "validated": true,
+      "s_prefix": "TAPE[24] repo=letsgo0226/CLSigma private=0 branch=main",
+      "godel_hex_prefix": "0x1a4d09887a8c205685487464ec56c56594b72c537e5612"
+    },
+    {
+      "i": 25,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/CLSigma_Cosmic_Love_TOE_MetaLanguage_iSH.sh_20260707",
+      "validated": true,
+      "s_prefix": "TAPE[25] repo=letsgo0226/CLSigma_Cosmic_Love_TOE_MetaLanguage_iSH.sh_20260707 private=0 branch=main",
+      "godel_hex_prefix": "0x1f5839bd4d3343e9fac9ad08dd08281e65c0a5407de066"
+    },
+    {
+      "i": 26,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/CLSIGMA_DYNAMIC_ZERO_SPECTRUM_iSH_ONE_LINER.sh_20260821",
+      "validated": true,
+      "s_prefix": "TAPE[26] repo=letsgo0226/CLSIGMA_DYNAMIC_ZERO_SPECTRUM_iSH_ONE_LINER.sh_20260821 private=0 branch=main",
+      "godel_hex_prefix": "0x1fb6a0928a8c82b3e3dab9736c58b1713cba09d9e5a47d"
+    },
+    {
+      "i": 27,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/CLSigma_GitHub_TOE_iSH.clcert",
+      "validated": true,
+      "s_prefix": "TAPE[27] repo=letsgo0226/CLSigma_GitHub_TOE_iSH.clcert private=0 branch=main",
+      "godel_hex_prefix": "0x1ca8050f73924bedafb62f68e4cf6663f00470f3605e6a"
+    },
+    {
+      "i": 28,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/CLSigma_TOE_Zero_Spectral_Operator_Physics.sh_20260707",
+      "validated": true,
+      "s_prefix": "TAPE[28] repo=letsgo0226/CLSigma_TOE_Zero_Spectral_Operator_Physics.sh_20260707 private=0 branch=main",
+      "godel_hex_prefix": "0x1f970989018af7ea51c69cedc675dd5dd56e419c3536bd"
+    },
+    {
+      "i": 29,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/CODE.sh",
+      "validated": true,
+      "s_prefix": "TAPE[29] repo=letsgo0226/CODE.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1a4d09887a8c20b69bc4e45618f6cddc9d5101588e3827"
+    },
+    {
+      "i": 30,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/Complete-Master-Ouroboros-",
+      "validated": true,
+      "s_prefix": "TAPE[30] repo=letsgo0226/Complete-Master-Ouroboros- private=0 branch=main",
+      "godel_hex_prefix": "0x1c52b7d37ee3660531d377ea3e4f13136f4c8a6960bc37"
+    },
+    {
+      "i": 31,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/Complete_Master_Ouroboros-vOMEGA-LMN-",
+      "validated": true,
+      "s_prefix": "TAPE[31] repo=letsgo0226/Complete_Master_Ouroboros-vOMEGA-LMN- private=0 branch=main",
+      "godel_hex_prefix": "0x1d906de51a343f5e691d9f9b86e7d04dfa8c835ab5fede"
+    },
+    {
+      "i": 32,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/cosmic-love-infinity-tm.sh",
+      "validated": true,
+      "s_prefix": "TAPE[32] repo=letsgo0226/cosmic-love-infinity-tm.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1c52b7d37ee3662e95bd20ec31a0421473f3b7d35204db"
+    },
+    {
+      "i": 33,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/Cosmic-Love-Is-The-Solution-s-For-Everything.sh",
+      "validated": true,
+      "s_prefix": "TAPE[33] repo=letsgo0226/Cosmic-Love-Is-The-Solution-s-For-Everything.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1ebd52876fafe9f4b8158ab04e483d16d012f011c784e9"
+    },
+    {
+      "i": 34,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/Cosmic-Love-Solution_s",
+      "validated": true,
+      "s_prefix": "TAPE[34] repo=letsgo0226/Cosmic-Love-Solution_s private=0 branch=main",
+      "godel_hex_prefix": "0x1be285fcc1f48f5a9ed9b03d09c18bf83fd896d6bd1cac"
+    },
+    {
+      "i": 35,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/COSMIC-LOVE-SYMBOLIC-FIXED-POINT-MODEL-20260706-",
+      "validated": true,
+      "s_prefix": "TAPE[35] repo=letsgo0226/COSMIC-LOVE-SYMBOLIC-FIXED-POINT-MODEL-20260706- private=0 branch=main",
+      "godel_hex_prefix": "0x1edc0fd9f71f9a0bc5a4322767a758588ac2726d84646c"
+    },
+    {
+      "i": 36,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/Cosmic-Solution_s",
+      "validated": true,
+      "s_prefix": "TAPE[36] repo=letsgo0226/Cosmic-Solution_s private=0 branch=main",
+      "godel_hex_prefix": "0x1b58b7dc45f678c5ee9bf7f4f7ab40b10cd4882f3a1dbd"
+    },
+    {
+      "i": 37,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/Cosmic_Energy.sh",
+      "validated": true,
+      "s_prefix": "TAPE[37] repo=letsgo0226/Cosmic_Energy.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1b3d7a61e4126673766edb15dee32cfede0ea81878e908"
+    },
+    {
+      "i": 38,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/COSMIC_LOVE_CLOSED_LOOP_MULTI_FACET",
+      "validated": true,
+      "s_prefix": "TAPE[38] repo=letsgo0226/COSMIC_LOVE_CLOSED_LOOP_MULTI_FACET private=0 branch=main",
+      "godel_hex_prefix": "0x1d55a544eb1922974e9f41c5c679e785989567fde574b0"
+    },
+    {
+      "i": 39,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/Cosmic_Love_Four_Cosmic_Engineering_Runtime.sh-20260707-",
+      "validated": true,
+      "s_prefix": "TAPE[39] repo=letsgo0226/Cosmic_Love_Four_Cosmic_Engineering_Runtime.sh-20260707- private=0 branch=main",
+      "godel_hex_prefix": "0x1fd657331d1726d6efde445f33decada6f0ef82f788f98"
+    },
+    {
+      "i": "facet:identity",
+      "kind": "facet",
+      "repo": null,
+      "validated": true,
+      "s_prefix": "FACET[identity] under Cosmic Love account TM",
+      "godel_hex_prefix": "0x1842b46f3c8046df05b1ff89e1b425e72ea1136afbd61d"
+    },
+    {
+      "i": "facet:evidence",
+      "kind": "facet",
+      "repo": null,
+      "validated": true,
+      "s_prefix": "FACET[evidence] under Cosmic Love account TM",
+      "godel_hex_prefix": "0x1842b46f3c80469663071b26aa99812afb3be3f1ddaec3"
+    },
+    {
+      "i": "facet:governance",
+      "kind": "facet",
+      "repo": null,
+      "validated": true,
+      "s_prefix": "FACET[governance] under Cosmic Love account TM",
+      "godel_hex_prefix": "0x1873521acf6883c896b112e1c915fe33e2a40e9a4fb1f6"
+    },
+    {
+      "i": "facet:boundary",
+      "kind": "facet",
+      "repo": null,
+      "validated": true,
+      "s_prefix": "FACET[boundary] under Cosmic Love account TM",
+      "godel_hex_prefix": "0x1842b46f3c80465e7041235770c44dc0772bfa2dd9017f"
+    },
+    {
+      "i": "facet:review",
+      "kind": "facet",
+      "repo": null,
+      "validated": true,
+      "s_prefix": "FACET[review] under Cosmic Love account TM",
+      "godel_hex_prefix": "0x1812776de93fde88820d87a4668543de75e0a86b60e6ab"
+    },
+    {
+      "i": "facet:certificate",
+      "kind": "facet",
+      "repo": null,
+      "validated": true,
+      "s_prefix": "FACET[certificate] under Cosmic Love account TM",
+      "godel_hex_prefix": "0x188bc56cea37ec00d7b690f63a7c6fc5f88c966f473e31"
+    },
+    {
+      "i": "facet:deployment_topology",
+      "kind": "facet",
+      "repo": null,
+      "validated": true,
+      "s_prefix": "FACET[deployment_topology] under Cosmic Love account TM",
+      "godel_hex_prefix": "0x1952d847383c5bd42216e96f98c0efa8b8ed10949d0c7a"
+    },
+    {
+      "i": "facet:non_arm_live",
+      "kind": "facet",
+      "repo": null,
+      "validated": true,
+      "s_prefix": "FACET[non_arm_live] under Cosmic Love account TM",
+      "godel_hex_prefix": "0x18a45132572224bc14bb871e2542461fef26dcc27188d9"
+    },
+    {
+      "i": "facet:GlobalNoWar",
+      "kind": "facet",
+      "repo": null,
+      "validated": true,
+      "s_prefix": "FACET[GlobalNoWar] under Cosmic Love account TM",
+      "godel_hex_prefix": "0x188bc56cea37e9f5bed54139962e94bcfd3b58c8eaef7c"
+    },
+    {
+      "i": "facet:PublicProgramsSeal",
+      "kind": "facet",
+      "repo": null,
+      "validated": true,
+      "s_prefix": "FACET[PublicProgramsSeal] under Cosmic Love account TM",
+      "godel_hex_prefix": "0x19399ea88facada5d465f9878e0e3aa5843be06e0e1857"
+    },
+    {
+      "i": "empty",
+      "kind": "fixed_point",
+      "repo": null,
+      "validated": true,
+      "s_prefix": "",
+      "godel_hex_prefix": "0x1"
+    },
+    {
+      "i": "axiom",
+      "kind": "axiom",
+      "repo": null,
+      "validated": true,
+      "s_prefix": "Cosmic Love Is The Solution(s) For Everything",
+      "godel_hex_prefix": "0x18256589af46972f7b02aac328123aa05be54b3482ec9c"
+    }
+  ]
+}

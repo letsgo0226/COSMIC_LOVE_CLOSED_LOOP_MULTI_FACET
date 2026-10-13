@@ -2,9 +2,9 @@
   "system": "COSMIC_LOVE_DAEMON",
   "form": "Solution(s)=s",
   "cycle": 0,
-  "timestamp": "2026-10-13T02:37:00Z",
-  "interval_sec": 30.0,
-  "duration_sec": 0.782,
+  "timestamp": "2026-10-13T02:37:25Z",
+  "interval_sec": 0.0,
+  "duration_sec": 3.46,
   "meta_seals_ok": true,
   "stages": [
     {
@@ -16,13 +16,17 @@
     },
     {
       "name": "hardware_vm",
-      "status": "skipped",
-      "reason": "missing"
+      "status": "ok",
+      "returncode": 0,
+      "stdout_tail": "HARDWARE_VM closed loop OK facets= 15\n",
+      "stderr_tail": ""
     },
     {
       "name": "resident_meta",
-      "status": "skipped",
-      "reason": "missing"
+      "status": "ok",
+      "returncode": 0,
+      "stdout_tail": "RESIDENT_AUTO_DEPLOY complete 2026-10-13T02:37:22Z\n",
+      "stderr_tail": ""
     }
   ],
   "errors": 0,
