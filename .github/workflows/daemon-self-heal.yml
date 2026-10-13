@@ -1,0 +1,60 @@
+name: Daemon Self-Heal Snapshot
+
+on:
+  schedule:
+    - cron: "5 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cosmic-love-certificates
+  cancel-in-progress: false
+
+jobs:
+  daemon-snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: One daemon cycle (self-heal + self-update)
+        env:
+          INTERVAL_SEC: "0"
+          RUN_STAGES: "1"
+          CL_TM_MAX_CELLS: "40"
+        run: |
+          set -euo pipefail
+          # single cycle via python -c import
+          python3 - <<'PY'
+          import os, sys
+          sys.path.insert(0, "scripts")
+          # load module by path
+          import importlib.util
+          spec = importlib.util.spec_from_file_location("daemon", "scripts/daemon_self_heal_loop.py")
+          mod = importlib.util.module_from_spec(spec)
+          # patch sleep loop: just cycle once
+          spec.loader.exec_module(mod)
+          st = mod.cycle(0)
+          assert st["meta_seals_ok"] and st["enables_live_trading"] is False
+          print("daemon cycle ok", st.get("daemon_healthy"), st.get("errors"), st.get("healed"))
+          PY
+      - name: Commit daemon state (rebase-safe)
+        run: |
+          set -euo pipefail
+          git config user.name "Cosmic Love Daemon"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add certificates/
+          if git diff --staged --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Daemon self-heal snapshot: Solution(s)=s formal [skip ci]"
+          for i in 1 2 3 4 5; do
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort 2>/dev/null || true; git pull --rebase --autostash origin main || true; }
+            if git push origin HEAD:main; then echo "push ok"; exit 0; fi
+            sleep $((i * 3))
+          done
+          exit 1
