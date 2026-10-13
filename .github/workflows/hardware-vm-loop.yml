@@ -1,0 +1,30 @@
+name: Hardware-as-VM Closed Loop
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "15 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  loop:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Seal hardware limits as VM facets (Solution(s)=s)
+        run: python3 scripts/hardware_vm_closed_loop.py
+      - name: Commit
+        run: |
+          git config user.name "Cosmic Love HW-VM Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add certificates/ facets/
+          git diff --staged --quiet || (
+            git commit -m "Hardware-as-VM closed loop: Solution(s)=s per device bound [skip ci]" && git push
+          )
