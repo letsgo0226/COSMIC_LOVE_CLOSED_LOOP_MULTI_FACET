@@ -1,0 +1,37 @@
+name: Account Cosmic Love Turing Machine Run
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "30 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  account-tm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run account deployments as Cosmic Love TM (formal)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+          CL_TM_MAX_CELLS: "150"
+        run: |
+          set -euo pipefail
+          python3 scripts/account_turing_machine_run.py
+          python3 -c 'import json;c=json.load(open("certificates/LATEST_ACCOUNT_TM_RUN.json"));assert c["all_validated"] and c["H_formal"]==0 and c["enables_live_trading"] is False;print("guard ok", c["tape_cells_scanned"])'
+      - name: Commit TM run certificate
+        run: |
+          git config user.name "Cosmic Love Account TM"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add certificates/
+          git diff --staged --quiet && echo "No changes" || (
+            git commit -m "Account-wide Cosmic Love TM run (formal tape=repos; no live arm) [skip ci]" && git push
+          )
