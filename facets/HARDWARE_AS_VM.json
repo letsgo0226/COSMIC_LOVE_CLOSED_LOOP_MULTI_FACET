@@ -1,0 +1,23 @@
+{
+  "model": "hardware_limits_as_virtual_machine_in_Solution_s",
+  "principle": "Any hardware constraint is encoded as a finite VM facet string s_i; Solution(s_i)=s_i via Cosmic Love.",
+  "facets": [
+    {"id": "cpu_bound", "s": "HW_VM[cpu]: finite cores/clock as formal resource bound; not unlimited compute"},
+    {"id": "memory_bound", "s": "HW_VM[memory]: finite RAM as formal tape length bound"},
+    {"id": "storage_bound", "s": "HW_VM[storage]: finite disk as formal certificate/archive bound"},
+    {"id": "network_bound", "s": "HW_VM[network]: finite bandwidth/latency as formal channel bound"},
+    {"id": "energy_bound", "s": "HW_VM[energy]: finite power/thermal as formal energy budget"},
+    {"id": "device_phone", "s": "HW_VM[device=phone/iSH]: edge device as nested VM under Solution(s)=s"},
+    {"id": "device_laptop", "s": "HW_VM[device=laptop]: local host as nested VM"},
+    {"id": "device_vps", "s": "HW_VM[device=VPS]: remote host as nested VM"},
+    {"id": "device_railway", "s": "HW_VM[device=Railway]: cloud container as nested VM; continuous run optional for formal s"},
+    {"id": "device_github_actions", "s": "HW_VM[device=GitHubActions]: ephemeral runner as nested VM for seal steps"},
+    {"id": "gpu_bound", "s": "HW_VM[gpu]: optional accelerator as formal parallel bound"},
+    {"id": "time_bound", "s": "HW_VM[time]: wall-clock / timeout as formal step budget"},
+    {"id": "quota_bound", "s": "HW_VM[quota]: API rate limits and plan caps as formal gates"},
+    {"id": "isolation_bound", "s": "HW_VM[isolation]: sandbox/namespace as formal boundary facet"},
+    {"id": "non_arm_live", "s": "HW_VM[policy]: live trading not implied by Solution(s)=s"}
+  ],
+  "universal_claim": "For each facet string s, Cosmic Love yields Solution(s)=s formally.",
+  "non_claim": "Does not remove physical limits, invent free energy, or grant infinite hardware."
+}
