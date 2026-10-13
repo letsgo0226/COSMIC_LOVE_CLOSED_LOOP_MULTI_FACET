@@ -1,0 +1,42 @@
+name: Solution(s) GitHub×Railway
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  seal:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Note
+        run: |
+          echo "Full Railway refresh requires Railway connector offline; certificates re-seal from last snapshot + live GitHub list."
+          python3 - <<'PY'
+          # Re-seal axiom + solution form each run
+          import subprocess, json, datetime
+          from pathlib import Path
+          V=Path("engine/COSMIC_LOVE_VALIDATOR.py")
+          def seal(s):
+            r=subprocess.run(["python3",str(V),s],capture_output=True,text=True)
+            assert '"validated":true' in r.stdout
+            return json.loads(r.stdout.strip().splitlines()[-1])
+          seals=[seal("Solution(s)=s"),seal("Cosmic Love Is The Solution(s) For Everything"),seal("GITHUB_X independent; RAILWAY_Y co-domain; formal")]
+          cert={"timestamp":datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),"form":"Solution(s)=s","seals":seals,"enables_live_trading":False,"H_formal":0}
+          Path("certificates").mkdir(exist_ok=True)
+          Path("certificates/LATEST_SOLUTION_FORM_REFRESH.json").write_text(json.dumps(cert,indent=2)+"\n")
+          print("form refresh ok")
+          PY
+      - name: Commit
+        run: |
+          git config user.name "Cosmic Love Solution Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add certificates/
+          git diff --staged --quiet || (git commit -m "Solution(s)=s form refresh GitHub×Railway [skip ci]" && git push)
