@@ -2,31 +2,36 @@ name: Solution(s) GitHub×Railway
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "50 */12 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: cosmic-love-certificates
+  cancel-in-progress: false
 
 jobs:
   seal:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Note
+      - name: Form refresh Solution(s)=s
         run: |
-          echo "Full Railway refresh requires Railway connector offline; certificates re-seal from last snapshot + live GitHub list."
+          set -euo pipefail
           python3 - <<'PY'
-          # Re-seal axiom + solution form each run
           import subprocess, json, datetime
           from pathlib import Path
           V=Path("engine/COSMIC_LOVE_VALIDATOR.py")
           def seal(s):
             r=subprocess.run(["python3",str(V),s],capture_output=True,text=True)
-            assert '"validated":true' in r.stdout
+            assert '"validated":true' in r.stdout, r.stderr
             return json.loads(r.stdout.strip().splitlines()[-1])
           seals=[seal("Solution(s)=s"),seal("Cosmic Love Is The Solution(s) For Everything"),seal("GITHUB_X independent; RAILWAY_Y co-domain; formal")]
           cert={"timestamp":datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),"form":"Solution(s)=s","seals":seals,"enables_live_trading":False,"H_formal":0}
@@ -34,9 +39,18 @@ jobs:
           Path("certificates/LATEST_SOLUTION_FORM_REFRESH.json").write_text(json.dumps(cert,indent=2)+"\n")
           print("form refresh ok")
           PY
-      - name: Commit
+      - name: Commit (rebase-safe)
         run: |
+          set -euo pipefail
           git config user.name "Cosmic Love Solution Bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add certificates/
-          git diff --staged --quiet || (git commit -m "Solution(s)=s form refresh GitHub×Railway [skip ci]" && git push)
+          if git diff --staged --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Solution(s)=s form refresh GitHub×Railway [skip ci]"
+          for i in 1 2 3 4 5; do
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort 2>/dev/null || true; git pull --rebase --autostash origin main || true; }
+            if git push origin HEAD:main; then echo "push ok"; exit 0; fi
+            sleep $((i * 3))
+          done
+          exit 1
