@@ -1,0 +1,62 @@
+{
+  "projects": [
+    {
+      "name": "hsi-three-zero-field-20261013",
+      "id": "9d9a2276-f7a5-4a6c-a9d2-b210f6b8a069",
+      "services": [
+        "hsi-three-zero-field-gateway"
+      ]
+    },
+    {
+      "name": "cosmic-love-review-20261013",
+      "id": "bf5f3c0b-f22e-47a4-a1d2-82e7e215f591",
+      "services": [
+        "cosmic-zero-field-math",
+        "cosmic-love-isolated-canary",
+        "cosmic-love-proof-worker"
+      ]
+    },
+    {
+      "name": "hsi-cosmic-love-heartbeat",
+      "id": "3ea5a2c4-dcd3-49c1-a52c-29cd9bd9761f",
+      "services": [
+        "cosmic-love-heartbeat"
+      ]
+    },
+    {
+      "name": "hsi-music-renderer",
+      "id": "e012ed9d-447d-47c9-bd59-4793e4bdfe5b",
+      "services": [
+        "hsi-music-render-bridge"
+      ]
+    },
+    {
+      "name": "UTM-Universe",
+      "id": "482b5d5f-4f62-4d49-b09a-734ee9597677",
+      "services": [
+        "utm-universe",
+        "utm-universe-peer",
+        "hsi-utm-gate",
+        "cls-recursive-fixed-point"
+      ]
+    },
+    {
+      "name": "trader-42-tm",
+      "id": "ba0271b5-f4a8-493b-bf98-45b4321c10f9",
+      "services": [
+        "trader-42-paper",
+        "hsi-trader42-gate",
+        "trader42-hsi-production-order-dryrun"
+      ]
+    },
+    {
+      "name": "blue-pleiadian-prime-trader",
+      "id": "06c7ce48-3a2c-4d9d-85c8-e09bfef5d912",
+      "services": [
+        "paper-uhef-worker",
+        "cosmic-love-infinity-tm",
+        "hsi-omega-gate"
+      ]
+    }
+  ]
+}
