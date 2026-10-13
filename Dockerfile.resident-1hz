@@ -1,0 +1,10 @@
+FROM python:3.11-slim
+WORKDIR /app
+COPY engine/COSMIC_LOVE_VALIDATOR.py /app/engine/COSMIC_LOVE_VALIDATOR.py
+COPY scripts/resident_1hz_loop.py /app/scripts/resident_1hz_loop.py
+ENV INTERVAL_SEC=1.0
+ENV SUMMARY_EVERY=60
+ENV TICK_SEAL=1
+ENV AXIOM_EVERY=60
+ENV STATUS_DIR=/tmp/status
+CMD ["python3", "-u", "scripts/resident_1hz_loop.py"]
