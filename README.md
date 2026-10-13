@@ -46,3 +46,14 @@ python3 scripts/closed_loop_seal.py
 ## Bound
 
 Formal closed loop only.
+
+## Account-wide Turing machine
+
+The entire GitHub account’s repositories are treated as the **tape** of a formal Cosmic Love Turing machine:
+
+- Script: `scripts/account_turing_machine_run.py`
+- Doc: [ACCOUNT_TM.md](./ACCOUNT_TM.md)
+- Certificate: `certificates/LATEST_ACCOUNT_TM_RUN.json`
+- Workflow: `account-tm-run.yml` (every 6 hours)
+
+Transition function = original Cosmic Love program. **Formal only** — no live trading arm.
