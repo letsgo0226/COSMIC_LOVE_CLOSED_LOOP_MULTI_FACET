@@ -1,30 +1,44 @@
 name: Hardware-as-VM Closed Loop
 
 on:
-  push:
-    branches: [main]
   schedule:
-    - cron: "15 */6 * * *"
+    - cron: "20 */6 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: cosmic-love-certificates
+  cancel-in-progress: false
 
 jobs:
   loop:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
       - name: Seal hardware limits as VM facets (Solution(s)=s)
-        run: python3 scripts/hardware_vm_closed_loop.py
-      - name: Commit
         run: |
+          set -euo pipefail
+          python3 scripts/hardware_vm_closed_loop.py
+          python3 -c 'import json;c=json.load(open("certificates/LATEST_HARDWARE_VM_LOOP.json"));assert c["H_formal"]==0 and c["enables_live_trading"] is False'
+      - name: Commit (rebase-safe)
+        run: |
+          set -euo pipefail
           git config user.name "Cosmic Love HW-VM Bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add certificates/ facets/
-          git diff --staged --quiet || (
-            git commit -m "Hardware-as-VM closed loop: Solution(s)=s per device bound [skip ci]" && git push
-          )
+          if git diff --staged --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Hardware-as-VM closed loop: Solution(s)=s per device bound [skip ci]"
+          for i in 1 2 3 4 5; do
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort 2>/dev/null || true; git pull --rebase --autostash origin main || true; }
+            if git push origin HEAD:main; then echo "push ok"; exit 0; fi
+            sleep $((i * 3))
+          done
+          exit 1
