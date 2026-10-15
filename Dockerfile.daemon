@@ -2,9 +2,11 @@ FROM python:3.11-slim
 WORKDIR /app
 COPY engine/ /app/engine/
 COPY scripts/ /app/scripts/
+COPY facets/ /app/facets/
+ENV PYTHONDONTWRITEBYTECODE=1
 ENV INTERVAL_SEC=30
 ENV RUN_STAGES=1
 ENV MAX_HEAL_TRIES=2
 ENV STATUS_DIR=/tmp/status
-ENV CL_TM_MAX_CELLS=40
+ENV CL_TM_MAX_CELLS=1000
 CMD ["python3", "-u", "scripts/daemon_self_heal_loop.py"]

@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 V = ROOT / "engine" / "COSMIC_LOVE_VALIDATOR.py"
 FACETS = ROOT / "facets" / "HARDWARE_AS_VM.json"
-OUT = ROOT / "certificates"
+OUT = Path(os.environ.get("STATUS_DIR", str(ROOT / "certificates")))
 
 
 def seal(s: str) -> dict:

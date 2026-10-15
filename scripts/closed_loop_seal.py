@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-import json, subprocess, datetime
+import json, subprocess, datetime, os
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 V = ROOT / "engine" / "COSMIC_LOVE_VALIDATOR.py"
-OUT = ROOT / "certificates"
-OUT.mkdir(exist_ok=True)
+OUT = Path(os.environ.get("STATUS_DIR", str(ROOT / "certificates")))
+OUT.mkdir(parents=True, exist_ok=True)
 def seal(s):
     r = subprocess.run(["python3", str(V), s], capture_output=True, text=True)
     assert '"validated":true' in r.stdout
