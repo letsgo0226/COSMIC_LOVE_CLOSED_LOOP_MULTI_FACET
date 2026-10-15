@@ -26,7 +26,10 @@ jobs:
         env:
           INTERVAL_SEC: "0"
           RUN_STAGES: "1"
-          CL_TM_MAX_CELLS: "40"
+          CL_TM_MAX_CELLS: "1000"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CL_GITHUB_TOKEN_KIND: "repository"
+          PYTHONDONTWRITEBYTECODE: "1"
         run: |
           set -euo pipefail
           # single cycle via python -c import
@@ -40,7 +43,7 @@ jobs:
           # patch sleep loop: just cycle once
           spec.loader.exec_module(mod)
           st = mod.cycle(0)
-          assert st["meta_seals_ok"] and st["enables_live_trading"] is False
+          assert st["core_ok"] and st["controller_ok"] and st["daemon_healthy"]
           print("daemon cycle ok", st.get("daemon_healthy"), st.get("errors"), st.get("healed"))
           PY
       - name: Commit daemon state (rebase-safe)

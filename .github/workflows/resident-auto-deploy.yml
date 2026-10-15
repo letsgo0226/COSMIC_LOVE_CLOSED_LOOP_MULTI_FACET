@@ -1,6 +1,9 @@
-name: Resident Full-Auto Deploy Loop
+name: Resident Verification and Inventory
 
 on:
+  push:
+    branches: [main]
+    paths: ['scripts/**', 'facets/**', 'Dockerfile.daemon', '.github/workflows/resident-auto-deploy.yml']
   schedule:
     - cron: "0 */3 * * *"
   workflow_dispatch:
@@ -26,12 +29,20 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
-          CL_TM_MAX_CELLS: "100"
+          CL_TM_MAX_CELLS: "1000"
+          CL_GITHUB_TOKEN_KIND: "repository"
+          PYTHONDONTWRITEBYTECODE: "1"
         run: |
           set -euo pipefail
           test -f engine/COSMIC_LOVE_VALIDATOR.py
           python3 scripts/resident_auto_deploy_loop.py
-          python3 -c 'import json;c=json.load(open("certificates/LATEST_RESIDENT_AUTO_DEPLOY.json"));assert c["all_meta_validated"] and c["enables_live_trading"] is False and c["resident"] is True;print("resident guard ok", c["timestamp"])'
+          python3 -c 'import json;c=json.load(open("certificates/LATEST_RESIDENT_AUTO_DEPLOY.json"));assert c["core_ok"] and c["controller_ok"] and c["all_required_stages_ok"];assert c["deployment_ok"] is False;print(c["status"], c["timestamp"])'
+      - name: Upload verification evidence even on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: resident-verification-${{ github.run_id }}
+          path: certificates/LATEST_*.json
       - name: Commit resident certificate (rebase-safe push)
         run: |
           set -euo pipefail

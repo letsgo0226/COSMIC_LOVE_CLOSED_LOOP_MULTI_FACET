@@ -10,15 +10,18 @@ This does NOT execute arbitrary code in other repos, does NOT arm live trading,
 and does NOT claim physical/computational control of GitHub beyond certificates.
 """
 from __future__ import annotations
-import json, os, subprocess, datetime, urllib.request
+import json, os, subprocess, datetime, hashlib, tempfile, time
 from pathlib import Path
+from github_api import GitHub, owned_repositories
 
 ROOT = Path(__file__).resolve().parents[1]
 VALIDATOR = ROOT / "engine" / "COSMIC_LOVE_VALIDATOR.py"
-OUT = ROOT / "certificates"
+OUT = Path(os.environ.get("STATUS_DIR", str(ROOT / "certificates")))
 OWNER = os.environ.get("GITHUB_REPOSITORY_OWNER", "letsgo0226")
-TOKEN = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN") or ""
-MAX_CELLS = int(os.environ.get("CL_TM_MAX_CELLS", "120"))
+TOKEN = os.environ.get("CL_ACCOUNT_TOKEN") or os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN", "")
+TOKEN_KIND = os.environ.get("CL_GITHUB_TOKEN_KIND") or ("installation" if os.environ.get("CL_ACCOUNT_TOKEN") else "user" if os.environ.get("GH_TOKEN") else "repository" if TOKEN else "public")
+MAX_CELLS = int(os.environ.get("CL_TM_MAX_CELLS", "1000"))
+INVENTORY_META = {}
 
 
 def seal(s: str) -> dict:
@@ -37,47 +40,34 @@ def seal(s: str) -> dict:
 
 
 def list_repos() -> list[dict]:
-    """Public + accessible private for OWNER via API if token; else public only."""
-    repos = []
-    page = 1
-    while len(repos) < MAX_CELLS:
-        if TOKEN:
-            url = f"https://api.github.com/user/repos?per_page=100&page={page}&affiliation=owner&sort=full_name"
-            req = urllib.request.Request(
-                url,
-                headers={
-                    "Authorization": f"Bearer {TOKEN}",
-                    "Accept": "application/vnd.github+json",
-                    "User-Agent": "cosmic-love-account-tm",
-                },
-            )
-        else:
-            url = f"https://api.github.com/users/{OWNER}/repos?per_page=100&page={page}&type=owner&sort=full_name"
-            req = urllib.request.Request(
-                url, headers={"Accept": "application/vnd.github+json", "User-Agent": "cosmic-love-account-tm"}
-            )
-        with urllib.request.urlopen(req, timeout=60) as resp:
-            batch = json.loads(resp.read().decode())
-        if not batch:
-            break
-        for r in batch:
-            if r.get("owner", {}).get("login") != OWNER and r.get("owner", {}).get("login") is not None:
-                # user/repos returns only owned when affiliation=owner
-                pass
-            repos.append(
-                {
-                    "name": r["name"],
-                    "full_name": r["full_name"],
-                    "private": bool(r.get("private")),
-                    "default_branch": r.get("default_branch") or "main",
-                    "description": (r.get("description") or "")[:200],
-                }
-            )
-            if len(repos) >= MAX_CELLS:
-                break
-        if len(batch) < 100:
-            break
-        page += 1
+    """Inventory only the token's declared visibility; cache to bound daemon API use."""
+    api = GitHub(TOKEN, TOKEN_KIND)
+    ttl = max(0, min(3600, int(os.environ.get("CL_INVENTORY_CACHE_SEC", "600"))))
+    key = hashlib.sha256(f"{OWNER}:{TOKEN_KIND}:{MAX_CELLS}:{TOKEN}".encode()).hexdigest()
+    cache = Path(tempfile.gettempdir()) / ("cosmic-love-inventory-" + key + ".json")
+    try:
+        cached = json.loads(cache.read_text())
+        if ttl and 0 <= time.time() - cached["fetched_at"] < ttl:
+            INVENTORY_META.update(cached["metadata"], cache_used=True)
+            return cached["repositories"]
+    except (OSError, ValueError, KeyError, TypeError):
+        pass
+    rows, truncated = owned_repositories(api, OWNER, MAX_CELLS)
+    repos = [{"name": r["name"], "full_name": r["full_name"],
+              "private": bool(r.get("private")), "default_branch": r.get("default_branch") or "main",
+              "description": (r.get("description") or "")[:200]} for r in rows]
+    metadata = {"visibility_scope": api.coverage, "token_kind": TOKEN_KIND,
+                "tape_truncated": truncated, "inventory_fetched_at": time.time(),
+                "account_wide_coverage_verified": False}
+    INVENTORY_META.update(metadata, cache_used=False)
+    if ttl:
+        try:
+            temp = cache.with_suffix(f".{os.getpid()}.tmp")
+            temp.write_text(json.dumps({"fetched_at": time.time(), "metadata": metadata, "repositories": repos}))
+            temp.chmod(0o600)
+            temp.replace(cache)
+        except OSError:
+            pass
     return repos
 
 
@@ -131,7 +121,11 @@ def main() -> None:
         "trigger": os.environ.get("GITHUB_EVENT_NAME", "local"),
         "run_id": os.environ.get("GITHUB_RUN_ID", ""),
         "tape_cells_scanned": len(tape),
-        "tape_truncated": len(tape) >= MAX_CELLS,
+        "tape_truncated": INVENTORY_META.get("tape_truncated", False),
+        "inventory": dict(INVENTORY_META),
+        "controller_ok": bool(tape) and not INVENTORY_META.get("tape_truncated", False),
+        "deployment_performed": False,
+        "deployment_ok": False,
         "steps": len(steps),
         "H_formal": 0,
         "all_validated": all(st["seal"]["validated"] for st in steps),
@@ -170,6 +164,8 @@ def main() -> None:
     safe = datetime.datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
     (OUT / f"ACCOUNT_TM_RUN_{safe}.json").write_text(json.dumps(cert_slim, ensure_ascii=False, indent=2) + "\n")
     print("ACCOUNT_TM_RUN complete cells=", len(tape), "steps=", len(steps), "H_formal=0")
+    if not cert["controller_ok"]:
+        raise SystemExit("Repository inventory is empty or truncated")
 
 
 if __name__ == "__main__":

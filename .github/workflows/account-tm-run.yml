@@ -26,11 +26,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
-          CL_TM_MAX_CELLS: "100"
+          CL_TM_MAX_CELLS: "1000"
+          CL_GITHUB_TOKEN_KIND: "repository"
+          PYTHONDONTWRITEBYTECODE: "1"
         run: |
           set -euo pipefail
           python3 scripts/account_turing_machine_run.py
-          python3 -c 'import json;c=json.load(open("certificates/LATEST_ACCOUNT_TM_RUN.json"));assert c["all_validated"] and c["H_formal"]==0 and c["enables_live_trading"] is False;print("guard ok", c["tape_cells_scanned"])'
+          python3 -c 'import json;c=json.load(open("certificates/LATEST_ACCOUNT_TM_RUN.json"));assert c["all_validated"] and c["controller_ok"] and c["deployment_ok"] is False;print("inventory guard ok", c["inventory"]["visibility_scope"], c["tape_cells_scanned"])'
       - name: Commit TM certificate (rebase-safe)
         run: |
           set -euo pipefail
