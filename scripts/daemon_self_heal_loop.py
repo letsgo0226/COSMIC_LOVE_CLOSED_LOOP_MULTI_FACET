@@ -105,6 +105,8 @@ def cycle(n: int) -> dict:
     now = datetime.datetime.now(datetime.timezone.utc)
     state = {
         "system": "COSMIC_LOVE_DAEMON", "form": "Solution(s)=s", "cycle": n,
+        "release_commit": os.environ.get("RAILWAY_GIT_COMMIT_SHA", ""),
+        "runtime_generation": os.environ.get("RUNTIME_GUARD_GENERATION", ""),
         "timestamp": now.strftime("%Y-%m-%dT%H:%M:%SZ"), "interval_sec": INTERVAL,
         "duration_sec": round(time.monotonic() - started, 3),
         "meta_seals_ok": core_ok, "core_ok": core_ok, "controller_ok": controller_ok,

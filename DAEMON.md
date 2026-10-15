@@ -46,3 +46,29 @@ minutes to bound API traffic. Use `CL_TM_MAX_CELLS=1000` for the current account
 These commands report `deployment_ok=false`: they verify the core and inventory,
 and do not deploy or check cloud releases. A cloud deployment needs its own
 provider revision, terminal deployment result, and application health evidence.
+
+## Railway runtime supervision
+
+The Railway entry point is now:
+
+```sh
+python3 -u scripts/runtime_guard.py --kind daemon -- python3 -u scripts/daemon_self_heal_loop.py
+```
+
+The guard exposes `/health` on `PORT` for Railway readiness, without requiring
+a public domain. Readiness requires a live child and a successful cycle from
+that same process generation, no older than 180 seconds. The state also records
+`RAILWAY_GIT_COMMIT_SHA`; an old certificate or a core-only success cannot pass.
+
+Every 60 seconds the guard checks again. After a 180-second startup allowance,
+three consecutive unhealthy probes restart the child process group. A child
+exit also triggers repair. Repairs are capped at three per rolling hour per
+guard process, with a ten-second backoff. Exhaustion exits nonzero; configure
+Railway `ON_FAILURE` with at most three container retries. SIGTERM stops the
+child and its subprocesses cleanly. No GitHub or Railway write credential is
+needed, and health checks never rebuild or redeploy the application.
+
+Enable Railway **Wait for CI** for the connected `main` branch. Changes to the
+watched source paths deploy after push checks pass. Certificate-only commits
+remain outside the watch paths. Platform deployment status and runtime guard
+health remain separate from the mathematical core's certificate.
