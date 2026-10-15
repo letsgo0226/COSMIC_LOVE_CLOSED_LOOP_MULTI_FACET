@@ -9,4 +9,4 @@ ENV RUN_STAGES=1
 ENV MAX_HEAL_TRIES=2
 ENV STATUS_DIR=/tmp/status
 ENV CL_TM_MAX_CELLS=1000
-CMD ["python3", "-u", "scripts/daemon_self_heal_loop.py"]
+CMD ["python3", "-u", "scripts/runtime_guard.py", "--kind", "daemon", "--", "python3", "-u", "scripts/daemon_self_heal_loop.py"]
