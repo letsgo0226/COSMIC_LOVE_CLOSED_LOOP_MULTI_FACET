@@ -1,13 +1,14 @@
 {
   "system": "RESIDENT_FULL_AUTO_DEPLOY_LOOP",
   "form": "Solution(s)=s",
-  "engine": "2-step identity + 257-Godel (original Cosmic Love program)",
-  "timestamp": "2026-10-15T04:26:25Z",
-  "trigger": "schedule",
-  "run_id": "38681452185",
+  "engine": "2-step identity + 257-Godel",
+  "timestamp": "2026-10-15T04:29:56Z",
+  "trigger": "push",
+  "run_id": "38681747434",
   "stages": [
     {
       "name": "closed_loop_seal",
+      "required": true,
       "status": "ok",
       "returncode": 0,
       "stdout_tail": "closed_loop ok\n",
@@ -15,6 +16,7 @@
     },
     {
       "name": "hardware_vm",
+      "required": true,
       "status": "ok",
       "returncode": 0,
       "stdout_tail": "HARDWARE_VM closed loop OK facets= 15\n",
@@ -22,15 +24,17 @@
     },
     {
       "name": "account_tm",
+      "required": true,
       "status": "ok",
       "returncode": 0,
-      "stdout_tail": "ACCOUNT_TM_RUN complete cells= 40 steps= 53 H_formal=0\n",
+      "stdout_tail": "ACCOUNT_TM_RUN complete cells= 174 steps= 187 H_formal=0\n",
       "stderr_tail": ""
     },
     {
       "name": "full_context",
+      "required": false,
       "status": "skipped",
-      "reason": "missing"
+      "reason": "optional stage not configured"
     }
   ],
   "stages_ok_or_skip": 4,
@@ -44,42 +48,17 @@
       "s_prefix": "Solution(s)=s",
       "validated": true,
       "godel_hex_prefix": "0x165ca6bcc4c48e7c19706c624df"
-    },
-    {
-      "s_prefix": "RESIDENT_AUTO_DEPLOY_LOOP: continuous formal redeploy of all facets",
-      "validated": true,
-      "godel_hex_prefix": "0x1b8202f2fa716ae8e13f8928023a278ba10f5c0038b312"
-    },
-    {
-      "s_prefix": "DIMENSIONS: identity,evidence,governance,boundary,certificate,GlobalNoWar,hardware_as_VM,account_TM,",
-      "validated": true,
-      "godel_hex_prefix": "0x1fee0562e914f9f78aeb6c7d89d24956dd8a833c74e3e1"
-    },
-    {
-      "s_prefix": "FACETS: multi-facet closed loop under original Cosmic Love program",
-      "validated": true,
-      "godel_hex_prefix": "0x1a6ee8d1f7056d446c0d116219299b27fbd06b88c1d40d"
-    },
-    {
-      "s_prefix": "BOUND: formal only; enables_live_trading=false",
-      "validated": true,
-      "godel_hex_prefix": "0x1828176921df3369654bbf4c217f16dcfce00868b76ccf"
-    },
-    {
-      "s_prefix": "",
-      "validated": true,
-      "godel_hex_prefix": "0x1"
-    },
-    {
-      "s_prefix": "The program is the solver. Resident loop reasserts Solution(s)=s.",
-      "validated": true,
-      "godel_hex_prefix": "0x1b772ff6d74f50642f1af5ef75abf11d9546f106dda78e"
     }
   ],
-  "H_formal": 0,
   "all_meta_validated": true,
-  "enables_live_trading": false,
+  "core_ok": true,
+  "all_required_stages_ok": true,
+  "controller_ok": true,
+  "status": "VERIFICATION_PASSED_NOT_DEPLOYED",
+  "H_formal": 0,
   "resident": true,
-  "automation": "GitHub Actions schedule + push + workflow_dispatch",
-  "bound": "Resident formal auto-deploy of Cosmic Love seals across dimensions/facets. Not Railway secret mutation, not Binance live arm, not physical unlimited hardware."
+  "deployment_performed": false,
+  "deployment_ok": false,
+  "enables_live_trading": false,
+  "bound": "Formal verification and declared-scope inventory only; no cloud deployment is performed or certified."
 }
