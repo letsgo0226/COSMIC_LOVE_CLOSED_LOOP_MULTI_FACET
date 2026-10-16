@@ -47,8 +47,11 @@ def check_daemon(state, expected_revision, generation, now, max_age):
     require(not expected_revision or state.get('release_commit') == expected_revision, 'release_mismatch')
     require(all(state.get(k) is True for k in ('core_ok', 'controller_ok', 'daemon_healthy')), 'daemon_unhealthy')
     require(state.get('errors') == 0, 'daemon_stage_errors')
+    require(state.get('quantum_verified') is True and state.get('core_protocol') ==
+            'HSI-COSMIC-QUANTUM-SELF-CLOSURE/QTM-1.0', 'quantum_core_missing')
     return {'healthy': True, 'release_commit': state.get('release_commit'),
-            'cycle': state.get('cycle'), 'cycle_age_sec': round(now - stamp, 1)}
+            'cycle': state.get('cycle'), 'cycle_age_sec': round(now - stamp, 1),
+            'quantum_verified': True, 'core_protocol': state['core_protocol']}
 
 
 class Budget:

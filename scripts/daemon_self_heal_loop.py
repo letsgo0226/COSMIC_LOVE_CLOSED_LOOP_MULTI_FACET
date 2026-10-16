@@ -30,7 +30,11 @@ def seal(s: str) -> dict:
     result = json.loads(r.stdout.strip().splitlines()[-1])
     if result.get("validated") is not True:
         raise RuntimeError("core verification did not validate")
-    return {"validated": True, "godel_hex_prefix": result.get("godel_hex", "")[:40]}
+    quantum = result.get("quantum", {})
+    if quantum.get("protocol") != "HSI-COSMIC-QUANTUM-SELF-CLOSURE/QTM-1.0" or not all(
+        quantum.get(k) is True for k in ("transition_verified", "norm_preserved", "U2_identity")):
+        raise RuntimeError("QTM core certificate missing or failed")
+    return {"validated": True, "quantum": quantum, "godel_hex_prefix": result.get("godel_hex", "")[:40]}
 
 
 def run_script(name: str, filename: str) -> dict:
@@ -109,6 +113,7 @@ def cycle(n: int) -> dict:
         "runtime_generation": os.environ.get("RUNTIME_GUARD_GENERATION", ""),
         "timestamp": now.strftime("%Y-%m-%dT%H:%M:%SZ"), "interval_sec": INTERVAL,
         "duration_sec": round(time.monotonic() - started, 3),
+        "quantum_verified": core_ok, "core_protocol": "HSI-COSMIC-QUANTUM-SELF-CLOSURE/QTM-1.0",
         "meta_seals_ok": core_ok, "core_ok": core_ok, "controller_ok": controller_ok,
         "daemon_healthy": healthy, "stages": stages, "errors": len(errors) + len(failed_certificates),
         "healed": sum(s.get("heal_attempted", False) and s["status"] == "ok" for s in stages),
@@ -140,7 +145,7 @@ def main() -> None:
             state = cycle(n)
             print(json.dumps({key: state[key] for key in (
                 "cycle", "status", "daemon_healthy", "core_ok", "controller_ok",
-                "deployment_ok", "errors", "healed", "H_formal")}), flush=True)
+                "deployment_ok", "errors", "healed", "H_formal", "quantum_verified", "core_protocol")}), flush=True)
         except Exception as exc:
             print(json.dumps({"cycle": n, "status": "DEGRADED",
                               "daemon_healthy": False, "controller_ok": False,
