@@ -1,6 +1,6 @@
 FROM python:3.11-slim
 WORKDIR /app
-COPY engine/COSMIC_LOVE_VALIDATOR.py /app/engine/COSMIC_LOVE_VALIDATOR.py
+COPY engine/ /app/engine/
 COPY scripts/resident_1hz_loop.py /app/scripts/resident_1hz_loop.py
 ENV INTERVAL_SEC=1.0
 ENV SUMMARY_EVERY=60
