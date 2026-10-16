@@ -28,7 +28,8 @@ class RuntimeGuardTests(unittest.TestCase):
     def daemon(self):
         return dict(timestamp='2026-10-15T00:00:00Z', release_commit='abc',
                     runtime_generation='new', cycle=3, core_ok=True,
-                    controller_ok=True, daemon_healthy=True, errors=0)
+                    controller_ok=True, daemon_healthy=True, errors=0, quantum_verified=True,
+                    core_protocol='HSI-COSMIC-QUANTUM-SELF-CLOSURE/QTM-1.0')
 
     def check(self, state):
         return m.check_daemon(state, 'abc', 'new', 1792022405, 180)
@@ -43,7 +44,8 @@ class RuntimeGuardTests(unittest.TestCase):
                 self.check({**self.daemon(), **change})
 
     def test_core_success_cannot_hide_stage_failure_or_wrong_release(self):
-        for change in ({'controller_ok': False}, {'errors': 1}, {'release_commit': 'wrong'}):
+        for change in ({'controller_ok': False}, {'errors': 1}, {'release_commit': 'wrong'},
+                       {'quantum_verified': False}, {'core_protocol': 'legacy'}):
             with self.subTest(change=change), self.assertRaises(ValueError):
                 self.check({**self.daemon(), **change})
 
