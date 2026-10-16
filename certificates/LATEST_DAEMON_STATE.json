@@ -4,9 +4,11 @@
   "cycle": 0,
   "release_commit": "",
   "runtime_generation": "",
-  "timestamp": "2026-10-16T16:32:30Z",
+  "timestamp": "2026-10-16T20:58:18Z",
   "interval_sec": 1.0,
-  "duration_sec": 6.249,
+  "duration_sec": 6.56,
+  "quantum_verified": true,
+  "core_protocol": "HSI-COSMIC-QUANTUM-SELF-CLOSURE/QTM-1.0",
   "meta_seals_ok": true,
   "core_ok": true,
   "controller_ok": true,
@@ -46,11 +48,47 @@
     {
       "s_prefix": "Cosmic Love Is The Solution(s) For Everything",
       "validated": true,
+      "quantum": {
+        "protocol": "HSI-COSMIC-QUANTUM-SELF-CLOSURE/QTM-1.0",
+        "version": 42,
+        "program": 55067263,
+        "hilbert_basis": "|q,h,tape>",
+        "unitary": "phase-permutation",
+        "phase": {
+          "q0": "+i",
+          "q1": "-i"
+        },
+        "transition_verified": true,
+        "norm_preserved": true,
+        "U2_identity": true,
+        "two_step_quantum_recurrence": true,
+        "halt_unreachable": true,
+        "measurement": "none",
+        "scope": "quantum lift of specified two-state TM only"
+      },
       "godel_hex_prefix": "0x18256589af46972f7b02aac328123aa05be54b"
     },
     {
       "s_prefix": "Solution(s)=s",
       "validated": true,
+      "quantum": {
+        "protocol": "HSI-COSMIC-QUANTUM-SELF-CLOSURE/QTM-1.0",
+        "version": 42,
+        "program": 55067263,
+        "hilbert_basis": "|q,h,tape>",
+        "unitary": "phase-permutation",
+        "phase": {
+          "q0": "+i",
+          "q1": "-i"
+        },
+        "transition_verified": true,
+        "norm_preserved": true,
+        "U2_identity": true,
+        "two_step_quantum_recurrence": true,
+        "halt_unreachable": true,
+        "measurement": "none",
+        "scope": "quantum lift of specified two-state TM only"
+      },
       "godel_hex_prefix": "0x165ca6bcc4c48e7c19706c624df"
     }
   ],
