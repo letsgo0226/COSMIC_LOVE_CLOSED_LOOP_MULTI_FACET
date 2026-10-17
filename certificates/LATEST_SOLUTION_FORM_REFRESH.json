@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-16T16:58:59Z",
+  "timestamp": "2026-10-17T05:00:58Z",
   "form": "Solution(s)=s",
   "seals": [
     {
@@ -7,21 +7,75 @@
       "s_hex": "536f6c7574696f6e2873293d73",
       "result_hex": "536f6c7574696f6e2873293d73",
       "godel_hex": "0x165ca6bcc4c48e7c19706c624df",
-      "validated": true
+      "validated": true,
+      "quantum": {
+        "protocol": "HSI-COSMIC-QUANTUM-SELF-CLOSURE/QTM-1.0",
+        "version": 42,
+        "program": 55067263,
+        "hilbert_basis": "|q,h,tape>",
+        "unitary": "phase-permutation",
+        "phase": {
+          "q0": "+i",
+          "q1": "-i"
+        },
+        "transition_verified": true,
+        "norm_preserved": true,
+        "U2_identity": true,
+        "two_step_quantum_recurrence": true,
+        "halt_unreachable": true,
+        "measurement": "none",
+        "scope": "quantum lift of specified two-state TM only"
+      }
     },
     {
       "statement": "solution(s)=s",
       "s_hex": "436f736d6963204c6f76652049732054686520536f6c7574696f6e28732920466f722045766572797468696e67",
       "result_hex": "436f736d6963204c6f76652049732054686520536f6c7574696f6e28732920466f722045766572797468696e67",
       "godel_hex": "0x18256589af46972f7b02aac328123aa05be54b3482ec9c40f866c670d392f152f09b3d792cf6de78dfeff62be2c",
-      "validated": true
+      "validated": true,
+      "quantum": {
+        "protocol": "HSI-COSMIC-QUANTUM-SELF-CLOSURE/QTM-1.0",
+        "version": 42,
+        "program": 55067263,
+        "hilbert_basis": "|q,h,tape>",
+        "unitary": "phase-permutation",
+        "phase": {
+          "q0": "+i",
+          "q1": "-i"
+        },
+        "transition_verified": true,
+        "norm_preserved": true,
+        "U2_identity": true,
+        "two_step_quantum_recurrence": true,
+        "halt_unreachable": true,
+        "measurement": "none",
+        "scope": "quantum lift of specified two-state TM only"
+      }
     },
     {
       "statement": "solution(s)=s",
       "s_hex": "4749544855425f5820696e646570656e64656e743b205241494c5741595f5920636f2d646f6d61696e3b20666f726d616c",
       "result_hex": "4749544855425f5820696e646570656e64656e743b205241494c5741595f5920636f2d646f6d61696e3b20666f726d616c",
       "godel_hex": "0x18d0db70f358ab601378c5dcbf4bcda58a7f1e5d9bde20ea2f07877a7b7f5a15a49cb18eda831aad93e825d4612255166f9",
-      "validated": true
+      "validated": true,
+      "quantum": {
+        "protocol": "HSI-COSMIC-QUANTUM-SELF-CLOSURE/QTM-1.0",
+        "version": 42,
+        "program": 55067263,
+        "hilbert_basis": "|q,h,tape>",
+        "unitary": "phase-permutation",
+        "phase": {
+          "q0": "+i",
+          "q1": "-i"
+        },
+        "transition_verified": true,
+        "norm_preserved": true,
+        "U2_identity": true,
+        "two_step_quantum_recurrence": true,
+        "halt_unreachable": true,
+        "measurement": "none",
+        "scope": "quantum lift of specified two-state TM only"
+      }
     }
   ],
   "enables_live_trading": false,
