@@ -1,4 +1,4 @@
-name: ATGC Managed QTM Recurrence
+name: ATGC Managed AKASHA-TM Verification
 
 on:
   repository_dispatch:
@@ -18,19 +18,25 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v5
-      - name: Verify 2 KB QTM recurrence
+      - name: Verify 2 KB AKASHA-TM core
         shell: bash
         run: |
           set -euo pipefail
           test "$(wc -l < lfp_atgc_tm_2kb.sh)" -eq 1
           test "$(wc -c < lfp_atgc_tm_2kb.sh)" -lt 2048
           sh -n lfp_atgc_tm_2kb.sh
-          sh lfp_atgc_tm_2kb.sh > atgc-certificate.json
+          sh lfp_atgc_tm_2kb.sh check > atgc-certificate.json
           python3 - <<'PY'
           import json
           x=json.load(open("atgc-certificate.json"))
-          assert x["protocol"]=="HSI-COSMIC-QUANTUM-SELF-CLOSURE/QTM-1.0"
-          assert all(x[k] is True for k in ("transition_verified","norm_preserved","U2_identity","two_step_quantum_recurrence"))
-          assert x["measurement"]=="none"
-          print("QTM_RECURRENCE_VERIFIED=1; scope=specified two-state TM only")
+          assert x["p"]==55067263
+          assert x["U2"] is True and x["E257"] is True
+          assert x["scope"]=="local-only" and x["size"]<2048
+          print("AKASHA_TM_VERIFIED=1; local-only; no trade authority")
+          PY
+          sh lfp_atgc_tm_2kb.sh zero 0101 1010 > atgc-zero.json
+          python3 - <<'PY'
+          import json
+          x=json.load(open("atgc-zero.json"))
+          assert x == {"zero":"1111","energy":0,"unique":True}
           PY
