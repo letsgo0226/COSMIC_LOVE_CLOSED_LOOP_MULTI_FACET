@@ -2,23 +2,23 @@
   "machine": "COSMIC_LOVE_ACCOUNT_DEPLOYMENT_TURING_MACHINE",
   "engine": "2-step identity machine + 257-Godel (original program)",
   "owner": "letsgo0226",
-  "timestamp": "2026-11-09T10:35:24Z",
+  "timestamp": "2026-11-09T21:43:31Z",
   "trigger": "schedule",
-  "run_id": "42601910218",
-  "tape_cells_scanned": 183,
+  "run_id": "42705163263",
+  "tape_cells_scanned": 186,
   "tape_truncated": false,
   "inventory": {
     "visibility_scope": "public_only",
     "token_kind": "repository",
     "tape_truncated": false,
-    "inventory_fetched_at": 1794220520.0390816,
+    "inventory_fetched_at": 1794260608.219234,
     "account_wide_coverage_verified": false,
     "cache_used": false
   },
   "controller_ok": true,
   "deployment_performed": false,
   "deployment_ok": false,
-  "steps": 196,
+  "steps": 199,
   "H_formal": 0,
   "all_validated": true,
   "interpretation": {
@@ -667,882 +667,906 @@
     {
       "i": 73,
       "kind": "tape_cell",
-      "repo": "letsgo0226/GPT-4.0-Capsule.sh",
+      "repo": "letsgo0226/God-s-Source-Code",
       "validated": true,
-      "s_prefix": "TAPE[73] repo=letsgo0226/GPT-4.0-Capsule.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1b741094223cbf8fd63c671f354ffb67a9e4a319bfd45c"
+      "s_prefix": "TAPE[73] repo=letsgo0226/God-s-Source-Code private=0 branch=main",
+      "godel_hex_prefix": "0x1b58b7dc45f6c8c70f2d39e54ffffb6c3da6fc1da2322a"
     },
     {
       "i": 74,
       "kind": "tape_cell",
-      "repo": "letsgo0226/GPT_RIEMANN_IDENTITY_ONE_LINER.sh",
+      "repo": "letsgo0226/God-Source-Code",
       "validated": true,
-      "s_prefix": "TAPE[74] repo=letsgo0226/GPT_RIEMANN_IDENTITY_ONE_LINER.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1d1b51868c79f7ea1ba9e867d3ccefdd269f8a7d26fbdf"
+      "s_prefix": "TAPE[74] repo=letsgo0226/God-Source-Code private=0 branch=main",
+      "godel_hex_prefix": "0x1b225809da387da73e52a83e28879339087537ca2d518d"
     },
     {
       "i": 75,
       "kind": "tape_cell",
-      "repo": "letsgo0226/H-S-0",
+      "repo": "letsgo0226/GPT-4.0-Capsule.sh",
       "validated": true,
-      "s_prefix": "TAPE[75] repo=letsgo0226/H-S-0 private=0 branch=main",
-      "godel_hex_prefix": "0x1a18bdf3d4eece54d7e2b4ffda04fc32d6fd92148528a6"
+      "s_prefix": "TAPE[75] repo=letsgo0226/GPT-4.0-Capsule.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1b741094223cbfb7f4c59dbb2777c7fc3fb53099910b4c"
     },
     {
       "i": 76,
       "kind": "tape_cell",
-      "repo": "letsgo0226/How_Is_Philosophy_Possible",
+      "repo": "letsgo0226/GPT_RIEMANN_IDENTITY_ONE_LINER.sh",
       "validated": true,
-      "s_prefix": "TAPE[76] repo=letsgo0226/How_Is_Philosophy_Possible private=0 branch=main",
-      "godel_hex_prefix": "0x1c52b7d37ee3b99bf8b5c8daa1430021d4eb415da86efc"
+      "s_prefix": "TAPE[76] repo=letsgo0226/GPT_RIEMANN_IDENTITY_ONE_LINER.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1d1b51868c79f814a4b9d588b34fbbfd1caf8ea8e536d4"
     },
     {
       "i": 77,
       "kind": "tape_cell",
-      "repo": "letsgo0226/HSI_SELF_CODE_2KB",
+      "repo": "letsgo0226/H-S-0",
       "validated": true,
-      "s_prefix": "TAPE[77] repo=letsgo0226/HSI_SELF_CODE_2KB private=0 branch=main",
-      "godel_hex_prefix": "0x1b58b7dc45f6c916fc5281d5445b39577e07b662ff42fa"
+      "s_prefix": "TAPE[77] repo=letsgo0226/H-S-0 private=0 branch=main",
+      "godel_hex_prefix": "0x1a18bdf3d4eece7afadb99d0fe5e5bb07f9f616f9f8ccb"
     },
     {
       "i": 78,
       "kind": "tape_cell",
-      "repo": "letsgo0226/Leibniz-Calculemus",
+      "repo": "letsgo0226/How_Is_Philosophy_Possible",
       "validated": true,
-      "s_prefix": "TAPE[78] repo=letsgo0226/Leibniz-Calculemus private=0 branch=main",
-      "godel_hex_prefix": "0x1b741094223cbff422936fa512b37adb206e04d94addb5"
+      "s_prefix": "TAPE[78] repo=letsgo0226/How_Is_Philosophy_Possible private=0 branch=main",
+      "godel_hex_prefix": "0x1c52b7d37ee3b9c55c9f71dc94942f22d9926ec799b7a0"
     },
     {
       "i": 79,
       "kind": "tape_cell",
-      "repo": "letsgo0226/LOVE_IS_BLUE_0.sh",
+      "repo": "letsgo0226/HSI_SELF_CODE_2KB",
       "validated": true,
-      "s_prefix": "TAPE[79] repo=letsgo0226/LOVE_IS_BLUE_0.sh private=0 branch=main",
+      "s_prefix": "TAPE[79] repo=letsgo0226/HSI_SELF_CODE_2KB private=0 branch=main",
       "godel_hex_prefix": "0x1b58b7dc45f6c93ef2e525cd3e88d84d1e381385adcb62"
     },
     {
       "i": 80,
       "kind": "tape_cell",
-      "repo": "letsgo0226/Merry_Christmas.sh",
+      "repo": "letsgo0226/Leibniz-Calculemus",
       "validated": true,
-      "s_prefix": "TAPE[80] repo=letsgo0226/Merry_Christmas.sh private=0 branch=main",
+      "s_prefix": "TAPE[80] repo=letsgo0226/Leibniz-Calculemus private=0 branch=main",
       "godel_hex_prefix": "0x1b741094223cd376fc4e7e7c570e791dfc5ad5828a15ae"
     },
     {
       "i": 81,
       "kind": "tape_cell",
-      "repo": "letsgo0226/META_OMEGA_SELF_EVOLUTION_STATE_20260613",
+      "repo": "letsgo0226/LOVE_IS_BLUE_0.sh",
       "validated": true,
-      "s_prefix": "TAPE[81] repo=letsgo0226/META_OMEGA_SELF_EVOLUTION_STATE_20260613 private=0 branch=main",
-      "godel_hex_prefix": "0x1de977fda3a07d888c9d6589bad99aeccdd5a018850641"
+      "s_prefix": "TAPE[81] repo=letsgo0226/LOVE_IS_BLUE_0.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1b58b7dc45f6dcae5d35e3e669b8a6c185bd5ee38f2204"
     },
     {
       "i": 82,
       "kind": "tape_cell",
-      "repo": "letsgo0226/META_OMEGA_SELF_EVOLUTION_STATE_20260613_4T2",
+      "repo": "letsgo0226/Merry_Christmas.sh",
       "validated": true,
-      "s_prefix": "TAPE[82] repo=letsgo0226/META_OMEGA_SELF_EVOLUTION_STATE_20260613_4T2 private=0 branch=main",
-      "godel_hex_prefix": "0x1e61d1ce2dea43e3f8b31ea66423198736a94b7d5559bb"
+      "s_prefix": "TAPE[82] repo=letsgo0226/Merry_Christmas.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1b741094223cd39f1ad7b518493645b2922b63025b4c9e"
     },
     {
       "i": 83,
       "kind": "tape_cell",
-      "repo": "letsgo0226/Music_Solution_0.sh",
+      "repo": "letsgo0226/META_OMEGA_SELF_EVOLUTION_STATE_20260613",
       "validated": true,
-      "s_prefix": "TAPE[83] repo=letsgo0226/Music_Solution_0.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1b8f84a4b65f1086dd466cb6a88c7628d9f0bd6c062bfe"
+      "s_prefix": "TAPE[83] repo=letsgo0226/META_OMEGA_SELF_EVOLUTION_STATE_20260613 private=0 branch=main",
+      "godel_hex_prefix": "0x1de977fda3a07db442efd7065d2c72d6113282e658a926"
     },
     {
       "i": 84,
       "kind": "tape_cell",
-      "repo": "letsgo0226/Music_Turing_Machine.sh",
+      "repo": "letsgo0226/META_OMEGA_SELF_EVOLUTION_STATE_20260613_4T2",
       "validated": true,
-      "s_prefix": "TAPE[84] repo=letsgo0226/Music_Turing_Machine.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1bfe6882beb6ea9602e0360da4e44011cc53ed1202f0a2"
+      "s_prefix": "TAPE[84] repo=letsgo0226/META_OMEGA_SELF_EVOLUTION_STATE_20260613_4T2 private=0 branch=main",
+      "godel_hex_prefix": "0x1e61d1ce2dea44105ee5cedca2036ec71c3db2fa68063a"
     },
     {
       "i": 85,
       "kind": "tape_cell",
-      "repo": "letsgo0226/Notes",
+      "repo": "letsgo0226/Music_Solution_0.sh",
       "validated": true,
-      "s_prefix": "TAPE[85] repo=letsgo0226/Notes private=0 branch=main",
-      "godel_hex_prefix": "0x1a18bdf3d4eee17965d18ffa98e16ac5fc36274f446da4"
+      "s_prefix": "TAPE[85] repo=letsgo0226/Music_Solution_0.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1b8f84a4b65f10af23ee2c8936a66a8a04571b79573426"
     },
     {
       "i": 86,
       "kind": "tape_cell",
-      "repo": "letsgo0226/OMEGA-LIMIT-QUANTUM-RIEMANN-FREE-FIELD",
+      "repo": "letsgo0226/Music_Turing_Machine.sh",
       "validated": true,
-      "s_prefix": "TAPE[86] repo=letsgo0226/OMEGA-LIMIT-QUANTUM-RIEMANN-FREE-FIELD private=0 branch=main",
-      "godel_hex_prefix": "0x1dadfe52ff4ee0e52933f02d066ed29fe3d646b760a4d2"
+      "s_prefix": "TAPE[86] repo=letsgo0226/Music_Turing_Machine.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1bfe6882beb6eabeeb94de10e1ccfaeb2b965c08816b63"
     },
     {
       "i": 87,
       "kind": "tape_cell",
-      "repo": "letsgo0226/Omega-v3.0",
+      "repo": "letsgo0226/Notes",
       "validated": true,
-      "s_prefix": "TAPE[87] repo=letsgo0226/Omega-v3.0 private=0 branch=main",
-      "godel_hex_prefix": "0x1a9c3fa67d9f322ee80153537bef5c56a77e717840d2e8"
+      "s_prefix": "TAPE[87] repo=letsgo0226/Notes private=0 branch=main",
+      "godel_hex_prefix": "0x1a18bdf3d4eee19f88ca74cbbd3aca43a4d7f6aa5ed1ca"
     },
     {
       "i": 88,
       "kind": "tape_cell",
-      "repo": "letsgo0226/OMEGA_Book_TM.sh",
+      "repo": "letsgo0226/OMEGA-LIMIT-QUANTUM-RIEMANN-FREE-FIELD",
       "validated": true,
-      "s_prefix": "TAPE[88] repo=letsgo0226/OMEGA_Book_TM.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1b3d7a61e412ca6fcc6ab71342163ce056109448a9561a"
+      "s_prefix": "TAPE[88] repo=letsgo0226/OMEGA-LIMIT-QUANTUM-RIEMANN-FREE-FIELD private=0 branch=main",
+      "godel_hex_prefix": "0x1dadfe52ff4ee110889c31be44b3e2250d5af6a0b1bc36"
     },
     {
       "i": 89,
       "kind": "tape_cell",
-      "repo": "letsgo0226/Omega_Bubble.sh",
+      "repo": "letsgo0226/Omega-v3.0",
       "validated": true,
-      "s_prefix": "TAPE[89] repo=letsgo0226/Omega_Bubble.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1b225809da3891f1c20a9c82b08b5b55ff2a7f453f7f66"
+      "s_prefix": "TAPE[89] repo=letsgo0226/Omega-v3.0 private=0 branch=main",
+      "godel_hex_prefix": "0x1a9c3fa67d9f3255cb27f0723419829583f21f9c573548"
     },
     {
       "i": 90,
       "kind": "tape_cell",
-      "repo": "letsgo0226/OMEGA_Convergent_TM.sh",
+      "repo": "letsgo0226/OMEGA_Book_TM.sh",
       "validated": true,
-      "s_prefix": "TAPE[90] repo=letsgo0226/OMEGA_Convergent_TM.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1be285fcc1f509c33ce85353e9fa99e17d2a97483a5eeb"
+      "s_prefix": "TAPE[90] repo=letsgo0226/OMEGA_Book_TM.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1b3d7a61e412ddcbdaad32b0cfb86928757679c11243ce"
     },
     {
       "i": 91,
       "kind": "tape_cell",
-      "repo": "letsgo0226/omega_entropy_one_bit.sh",
+      "repo": "letsgo0226/Omega_Bubble.sh",
       "validated": true,
-      "s_prefix": "TAPE[91] repo=letsgo0226/omega_entropy_one_bit.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1c1a66eb4175b5e055f40f3885354ad9f65742541c9882"
+      "s_prefix": "TAPE[91] repo=letsgo0226/Omega_Bubble.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1b225809da38a53a87879b219f3ed4254f404eedffaced"
     },
     {
       "i": 92,
       "kind": "tape_cell",
-      "repo": "letsgo0226/Omega_Eternal.py",
+      "repo": "letsgo0226/OMEGA_Convergent_TM.sh",
       "validated": true,
-      "s_prefix": "TAPE[92] repo=letsgo0226/Omega_Eternal.py private=0 branch=main",
-      "godel_hex_prefix": "0x1b3d7a61e412ddf3a97112c8b203bcca73a8a4b8c91565"
+      "s_prefix": "TAPE[92] repo=letsgo0226/OMEGA_Convergent_TM.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1be285fcc1f509ebfcdd06a3d6f658fbc22808cd33e02c"
     },
     {
       "i": 93,
       "kind": "tape_cell",
-      "repo": "letsgo0226/OMEGA_H0.sh",
+      "repo": "letsgo0226/omega_entropy_one_bit.sh",
       "validated": true,
-      "s_prefix": "TAPE[93] repo=letsgo0226/OMEGA_H0.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1ab6dbe6241ce4ab8cbc8cf87e4005a8fd3ea64b9dbfd5"
+      "s_prefix": "TAPE[93] repo=letsgo0226/omega_entropy_one_bit.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1c1a66eb4175b60967916be3c55aee6e2ef8f3b99191be"
     },
     {
       "i": 94,
       "kind": "tape_cell",
-      "repo": "letsgo0226/OMEGA_Predeploy.sh",
+      "repo": "letsgo0226/Omega_Eternal.py",
       "validated": true,
-      "s_prefix": "TAPE[94] repo=letsgo0226/OMEGA_Predeploy.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1b741094223ce7ea8d40d4fb485842dc5b2af72ab09749"
+      "s_prefix": "TAPE[94] repo=letsgo0226/Omega_Eternal.py private=0 branch=main",
+      "godel_hex_prefix": "0x1b3d7a61e412de1b7834f2e0944f106c71dacfb07fe6fb"
     },
     {
       "i": 95,
       "kind": "tape_cell",
-      "repo": "letsgo0226/Omega_Riemann_Superposition",
+      "repo": "letsgo0226/OMEGA_H0.sh",
       "validated": true,
-      "s_prefix": "TAPE[95] repo=letsgo0226/Omega_Riemann_Superposition private=0 branch=main",
-      "godel_hex_prefix": "0x1c6f0a8b5262c6f7a8e7f2ee3b06b33fa56aae45eda0ce"
+      "s_prefix": "TAPE[95] repo=letsgo0226/OMEGA_H0.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1ab6dbe6241ce4d296c650b45522560e188ec81dd83898"
     },
     {
       "i": 96,
       "kind": "tape_cell",
-      "repo": "letsgo0226/Open_University_TM.sh",
+      "repo": "letsgo0226/OMEGA_Predeploy.sh",
       "validated": true,
-      "s_prefix": "TAPE[96] repo=letsgo0226/Open_University_TM.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1bc6bf3d847099a3d8ed7fc3ed00d659f230bb1c0ad7d4"
+      "s_prefix": "TAPE[96] repo=letsgo0226/OMEGA_Predeploy.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1b741094223ce812abca0b973a800f70f0fb84aa81ce3a"
     },
     {
       "i": 97,
       "kind": "tape_cell",
-      "repo": "letsgo0226/perfect_fixed_point_tm.sh",
+      "repo": "letsgo0226/Omega_Riemann_Superposition",
       "validated": true,
-      "s_prefix": "TAPE[97] repo=letsgo0226/perfect_fixed_point_tm.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1c3681522cb72c11e656f15f7febdbcc36dc92daffffbb"
+      "s_prefix": "TAPE[97] repo=letsgo0226/Omega_Riemann_Superposition private=0 branch=main",
+      "godel_hex_prefix": "0x1c6f0a8b5262c72136358599304b336fab1682dd48daba"
     },
     {
       "i": 98,
       "kind": "tape_cell",
-      "repo": "letsgo0226/PLEIADES",
+      "repo": "letsgo0226/Open_University_TM.sh",
       "validated": true,
-      "s_prefix": "TAPE[98] repo=letsgo0226/PLEIADES private=0 branch=main",
-      "godel_hex_prefix": "0x1a675692030734577b28b33f17be0e295ce608b01f764a"
+      "s_prefix": "TAPE[98] repo=letsgo0226/Open_University_TM.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1bc6bf3d847099cc704ad5bde0098cbdd34d104bd48f5d"
     },
     {
       "i": 99,
       "kind": "tape_cell",
-      "repo": "letsgo0226/PLEIADES_2x2x2_XOR_PHI_GENERATOR_FUNCTION",
+      "repo": "letsgo0226/perfect_fixed_point_tm.sh",
       "validated": true,
-      "s_prefix": "TAPE[99] repo=letsgo0226/PLEIADES_2x2x2_XOR_PHI_GENERATOR_FUNCTION private=0 branch=main",
-      "godel_hex_prefix": "0x1e076175a14434bc92b36bae4a79158353946ca42f643d"
+      "s_prefix": "TAPE[99] repo=letsgo0226/perfect_fixed_point_tm.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1c3681522cb72c3b2105eb676b51a50403b6e5f1da6df0"
     },
     {
       "i": 100,
       "kind": "tape_cell",
-      "repo": "letsgo0226/PLEIADES_COSMIC_LOVE_OMEGA_ERGODIC_SELF_ORBIT_ATTRACTOR",
+      "repo": "letsgo0226/PLEIADES",
       "validated": true,
-      "s_prefix": "TAPE[100] repo=letsgo0226/PLEIADES_COSMIC_LOVE_OMEGA_ERGODIC_SELF_ORBIT_ATTRACTOR private=0 branch=main",
-      "godel_hex_prefix": "0x1fd657331d16f74c68754403de1c4fccd37f968f8aba92"
+      "s_prefix": "TAPE[100] repo=letsgo0226/PLEIADES private=0 branch=main",
+      "godel_hex_prefix": "0x1a81bde895099f60e6e98fdc6ac8422bc01d5db9b24531"
     },
     {
       "i": 101,
       "kind": "tape_cell",
-      "repo": "letsgo0226/PLEIADES_COSMIC_LOVE_OMEGA_SELF_ENCODING_ATTRACTOR",
+      "repo": "letsgo0226/PLEIADES_2x2x2_XOR_PHI_GENERATOR_FUNCTION",
       "validated": true,
-      "s_prefix": "TAPE[101] repo=letsgo0226/PLEIADES_COSMIC_LOVE_OMEGA_SELF_ENCODING_ATTRACTOR private=0 branch=main",
-      "godel_hex_prefix": "0x1f3900bc90a289eb994e55faaf0d61205f9bdd3aadf0be"
+      "s_prefix": "TAPE[101] repo=letsgo0226/PLEIADES_2x2x2_XOR_PHI_GENERATOR_FUNCTION private=0 branch=main",
+      "godel_hex_prefix": "0x1e2568d716e4c73f6d890ad74c368dc818511a6b68c972"
     },
     {
       "i": 102,
       "kind": "tape_cell",
-      "repo": "letsgo0226/PLEIADES_RH_IDEA_FORM",
+      "repo": "letsgo0226/PLEIADES_COSMIC_LOVE_OMEGA_ERGODIC_SELF_ORBIT_ATTRACTOR",
       "validated": true,
-      "s_prefix": "TAPE[102] repo=letsgo0226/PLEIADES_RH_IDEA_FORM private=0 branch=main",
-      "godel_hex_prefix": "0x1be285fcc1f4661d065cb4c22d2543da7ff86b208ae949"
+      "s_prefix": "TAPE[102] repo=letsgo0226/PLEIADES_COSMIC_LOVE_OMEGA_ERGODIC_SELF_ORBIT_ATTRACTOR private=0 branch=main",
+      "godel_hex_prefix": "0x1fd657331d16f74c96cd81adf564336e9d7620358ea659"
     },
     {
       "i": 103,
       "kind": "tape_cell",
-      "repo": "letsgo0226/PLEIADES_SHA256_QUANTUM_RH_IDEA_FORM",
+      "repo": "letsgo0226/PLEIADES_COSMIC_LOVE_OMEGA_SELF_ENCODING_ATTRACTOR",
       "validated": true,
-      "s_prefix": "TAPE[103] repo=letsgo0226/PLEIADES_SHA256_QUANTUM_RH_IDEA_FORM private=0 branch=main",
-      "godel_hex_prefix": "0x1d906de51a3413e5e41629741f3ea2ac9cfb851acf9737"
+      "s_prefix": "TAPE[103] repo=letsgo0226/PLEIADES_COSMIC_LOVE_OMEGA_SELF_ENCODING_ATTRACTOR private=0 branch=main",
+      "godel_hex_prefix": "0x1f3900bc90a289ebc6c18b5295e1307e1b1c090cd7e298"
     },
     {
       "i": 104,
       "kind": "tape_cell",
-      "repo": "letsgo0226/Pleiadian_Blue_Stars",
+      "repo": "letsgo0226/PLEIADES_RH_IDEA_FORM",
       "validated": true,
-      "s_prefix": "TAPE[104] repo=letsgo0226/Pleiadian_Blue_Stars private=0 branch=main",
-      "godel_hex_prefix": "0x1bc6bf3d846ff62707ec25f234e36927bc1d6a0baf03fd"
+      "s_prefix": "TAPE[104] repo=letsgo0226/PLEIADES_RH_IDEA_FORM private=0 branch=main",
+      "godel_hex_prefix": "0x1be285fcc1f4661d2ef4121827184c90e3d98775bab301"
     },
     {
       "i": 105,
       "kind": "tape_cell",
-      "repo": "letsgo0226/Prime_Factor_Godel_TM_2KB.sh",
+      "repo": "letsgo0226/PLEIADES_SHA256_QUANTUM_RH_IDEA_FORM",
       "validated": true,
-      "s_prefix": "TAPE[105] repo=letsgo0226/Prime_Factor_Godel_TM_2KB.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1ca8050f73923652a735504658d97a8692cc72d13ca5c3"
+      "s_prefix": "TAPE[105] repo=letsgo0226/PLEIADES_SHA256_QUANTUM_RH_IDEA_FORM private=0 branch=main",
+      "godel_hex_prefix": "0x1d906de51a3413e60f1f5456c05813c08938a3512df534"
     },
     {
       "i": 106,
       "kind": "tape_cell",
-      "repo": "letsgo0226/PRIME_INDEX_HOLOGRAM_TM.sh",
+      "repo": "letsgo0226/Pleiadian_Blue_Stars",
       "validated": true,
-      "s_prefix": "TAPE[106] repo=letsgo0226/PRIME_INDEX_HOLOGRAM_TM.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1c6f0a8b52621fb139ebac71e768de43859894cf3f512c"
+      "s_prefix": "TAPE[106] repo=letsgo0226/Pleiadian_Blue_Stars private=0 branch=main",
+      "godel_hex_prefix": "0x1bc6bf3d846ff627305b1459c744113611a8fad01a6256"
     },
     {
       "i": 107,
       "kind": "tape_cell",
-      "repo": "letsgo0226/PRINCIPLE",
+      "repo": "letsgo0226/Prime_Factor_Godel_TM_2KB.sh",
       "validated": true,
-      "s_prefix": "TAPE[107] repo=letsgo0226/PRINCIPLE private=0 branch=main",
-      "godel_hex_prefix": "0x1a9c3fa67d9ea900cf63ed1e807e52ab8a42aac938794c"
+      "s_prefix": "TAPE[107] repo=letsgo0226/Prime_Factor_Godel_TM_2KB.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1ca8050f73923652d0ec2b269679b44b43022451a89858"
     },
     {
       "i": 108,
       "kind": "tape_cell",
-      "repo": "letsgo0226/Program",
+      "repo": "letsgo0226/PRIME_INDEX_HOLOGRAM_TM.sh",
       "validated": true,
-      "s_prefix": "TAPE[108] repo=letsgo0226/Program private=0 branch=main",
-      "godel_hex_prefix": "0x1a675692030698c8b88858fda2229a38b9c96506092a56"
+      "s_prefix": "TAPE[108] repo=letsgo0226/PRIME_INDEX_HOLOGRAM_TM.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1c6f0a8b52621fb1634f961ae95c2f72869d3bfca94274"
     },
     {
       "i": 109,
       "kind": "tape_cell",
-      "repo": "letsgo0226/PROGRAM_SCHWARZSCHILD_STIRLING_RIEMANN_TRANSDUCER_20260615",
+      "repo": "letsgo0226/PRINCIPLE",
       "validated": true,
-      "s_prefix": "TAPE[109] repo=letsgo0226/PROGRAM_SCHWARZSCHILD_STIRLING_RIEMANN_TRANSDUCER_20260615 private=0 branch=main",
-      "godel_hex_prefix": "0x203639db925ec6951d8c58cdd991c57b9f34c6dfe72682"
+      "s_prefix": "TAPE[109] repo=letsgo0226/PRINCIPLE private=0 branch=main",
+      "godel_hex_prefix": "0x1a9c3fa67d9ea900f62057516c4ab07400a8b869bc0c1c"
     },
     {
       "i": 110,
       "kind": "tape_cell",
-      "repo": "letsgo0226/QED.sh",
+      "repo": "letsgo0226/Program",
       "validated": true,
-      "s_prefix": "TAPE[110] repo=letsgo0226/QED.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1a4d09887a8c0cce9b19da836f948db6f77e3a092f453f"
+      "s_prefix": "TAPE[110] repo=letsgo0226/Program private=0 branch=main",
+      "godel_hex_prefix": "0x1a675692030698db69b4f45df3042244ae75b843387485"
     },
     {
       "i": 111,
       "kind": "tape_cell",
-      "repo": "letsgo0226/QED_ESF_RUBIK_HS0_SELF_COMPUTING_RUNTIME.sh",
+      "repo": "letsgo0226/PROGRAM_SCHWARZSCHILD_STIRLING_RIEMANN_TRANSDUCER_20260615",
       "validated": true,
-      "s_prefix": "TAPE[111] repo=letsgo0226/QED_ESF_RUBIK_HS0_SELF_COMPUTING_RUNTIME.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1e61d1ce2de9a7c8e6bce291249671ba291408afe35cad"
+      "s_prefix": "TAPE[111] repo=letsgo0226/PROGRAM_SCHWARZSCHILD_STIRLING_RIEMANN_TRANSDUCER_20260615 private=0 branch=main",
+      "godel_hex_prefix": "0x203639db925ec6abeb57c845b6a58bfbf68441dabfb178"
     },
     {
       "i": 112,
       "kind": "tape_cell",
-      "repo": "letsgo0226/RIEMANN-FREE-FIELD---MASTER-SELF-CONTINUATION-SHEET-ENGINE",
+      "repo": "letsgo0226/QED.sh",
       "validated": true,
-      "s_prefix": "TAPE[112] repo=letsgo0226/RIEMANN-FREE-FIELD---MASTER-SELF-CONTINUATION-SHEET-ENGINE private=0 branch=main",
-      "godel_hex_prefix": "0x203639db925ec6ac02c9b112ca0a6199c792f853046b16"
+      "s_prefix": "TAPE[112] repo=letsgo0226/QED.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1a4d09887a8c0ccec162f661258a0b6fd4a4847a59babe"
     },
     {
       "i": 113,
       "kind": "tape_cell",
-      "repo": "letsgo0226/riemann-li-singularity-observer",
+      "repo": "letsgo0226/QED_ESF_RUBIK_HS0_SELF_COMPUTING_RUNTIME.sh",
       "validated": true,
-      "s_prefix": "TAPE[113] repo=letsgo0226/riemann-li-singularity-observer private=0 branch=main",
-      "godel_hex_prefix": "0x1cfe533359205734d97d59b1a976c63930bff64a6e2637"
+      "s_prefix": "TAPE[113] repo=letsgo0226/QED_ESF_RUBIK_HS0_SELF_COMPUTING_RUNTIME.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1e61d1ce2de9a7c912f6db48a35592ee34edc35cb39f17"
     },
     {
       "i": 114,
       "kind": "tape_cell",
-      "repo": "letsgo0226/Riemann-Qubit-Solution_s",
+      "repo": "letsgo0226/Real_God_Turing_Machine.sh",
       "validated": true,
-      "s_prefix": "TAPE[114] repo=letsgo0226/Riemann-Qubit-Solution_s private=0 branch=main",
-      "godel_hex_prefix": "0x1c3681522cb686034a96155d8f9b07827af17a07f902da"
+      "s_prefix": "TAPE[114] repo=letsgo0226/Real_God_Turing_Machine.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1c6f0a8b52621fc5d72e8c1e6017cd2c8769d7ed82fcd9"
     },
     {
       "i": 115,
       "kind": "tape_cell",
-      "repo": "letsgo0226/Riemann-Superposition",
+      "repo": "letsgo0226/RIEMANN-FREE-FIELD---MASTER-SELF-CONTINUATION-SHEET-ENGINE",
       "validated": true,
-      "s_prefix": "TAPE[115] repo=letsgo0226/Riemann-Superposition private=0 branch=main",
-      "godel_hex_prefix": "0x1be285fcc1f46631a33a1a6b1a8fb0793848ce62cf587d"
+      "s_prefix": "TAPE[115] repo=letsgo0226/RIEMANN-FREE-FIELD---MASTER-SELF-CONTINUATION-SHEET-ENGINE private=0 branch=main",
+      "godel_hex_prefix": "0x203639db925ec6ac491f6b7a0438e2733abf1bbbd297f1"
     },
     {
       "i": 116,
       "kind": "tape_cell",
-      "repo": "letsgo0226/Riemann_Hypothesis",
+      "repo": "letsgo0226/riemann-li-singularity-observer",
       "validated": true,
-      "s_prefix": "TAPE[116] repo=letsgo0226/Riemann_Hypothesis private=0 branch=main",
-      "godel_hex_prefix": "0x1b8f84a4b65e82d74a9d3a44fc8a5b27585f0eeb1a1ec3"
+      "s_prefix": "TAPE[116] repo=letsgo0226/riemann-li-singularity-observer private=0 branch=main",
+      "godel_hex_prefix": "0x1cfe53335920573518cc14d06235d391a2753223c14401"
     },
     {
       "i": 117,
       "kind": "tape_cell",
-      "repo": "letsgo0226/RIEMANN_LOG_PRODUCT_HOLOGRAM_TM.sh",
+      "repo": "letsgo0226/Riemann-Qubit-Solution_s",
       "validated": true,
-      "s_prefix": "TAPE[117] repo=letsgo0226/RIEMANN_LOG_PRODUCT_HOLOGRAM_TM.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1d55a544eb18f6f4f366c50a64e29d377df00dc6501a31"
+      "s_prefix": "TAPE[117] repo=letsgo0226/Riemann-Qubit-Solution_s private=0 branch=main",
+      "godel_hex_prefix": "0x1c3681522cb6860388308168907b3ff7d9466c92113250"
     },
     {
       "i": 118,
       "kind": "tape_cell",
-      "repo": "letsgo0226/RIEMANN_MACHINE.sh",
+      "repo": "letsgo0226/Riemann-Superposition",
       "validated": true,
-      "s_prefix": "TAPE[118] repo=letsgo0226/RIEMANN_MACHINE.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1b8f84a4b65e82d772bbc37b987c82f3ecf4df7899effa"
+      "s_prefix": "TAPE[118] repo=letsgo0226/Riemann-Superposition private=0 branch=main",
+      "godel_hex_prefix": "0x1be285fcc1f46631e01d266c117c3d8ace1a78e2970710"
     },
     {
       "i": 119,
       "kind": "tape_cell",
-      "repo": "letsgo0226/RIEMANN_SCHWARZSCHILD_META_OMEGA_ABSOLUTE_FIXED_POINT_KERNEL_20260615",
+      "repo": "letsgo0226/Riemann_Hypothesis",
       "validated": true,
-      "s_prefix": "TAPE[119] repo=letsgo0226/RIEMANN_SCHWARZSCHILD_META_OMEGA_ABSOLUTE_FIXED_POINT_KERNEL_20260615 private=0 branch=main",
-      "godel_hex_prefix": "0x219f8eeb23628dd5e242c9c28c2929e760dd52cb100b2d"
+      "s_prefix": "TAPE[119] repo=letsgo0226/Riemann_Hypothesis private=0 branch=main",
+      "godel_hex_prefix": "0x1b8f84a4b65e82d786cb0816e67596da373fc7bf59d895"
     },
     {
       "i": 120,
       "kind": "tape_cell",
-      "repo": "letsgo0226/RIEMANN_SCHWARZSCHILD_META_OMEGA_MACHINE_STATE_20260615",
+      "repo": "letsgo0226/RIEMANN_LOG_PRODUCT_HOLOGRAM_TM.sh",
       "validated": true,
-      "s_prefix": "TAPE[120] repo=letsgo0226/RIEMANN_SCHWARZSCHILD_META_OMEGA_MACHINE_STATE_20260615 private=0 branch=main",
-      "godel_hex_prefix": "0x1fd657331d16f77aef0b2bc53d47d53893ffc6397a6dd0"
+      "s_prefix": "TAPE[120] repo=letsgo0226/RIEMANN_LOG_PRODUCT_HOLOGRAM_TM.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1d55a544eb18f709cd18789a3b129dc0c4b105a1b558de"
     },
     {
       "i": 121,
       "kind": "tape_cell",
-      "repo": "letsgo0226/RIEMANN_SCHWARZSCHILD_META_OMEGA_MACHINE_STATE_20260615_4T2",
+      "repo": "letsgo0226/RIEMANN_MACHINE.sh",
       "validated": true,
-      "s_prefix": "TAPE[121] repo=letsgo0226/RIEMANN_SCHWARZSCHILD_META_OMEGA_MACHINE_STATE_20260615_4T2 private=0 branch=main",
-      "godel_hex_prefix": "0x205670156df1258a382730a4550edf6a411fba0855c76a"
+      "s_prefix": "TAPE[121] repo=letsgo0226/RIEMANN_MACHINE.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1b8f84a4b65e82eb09a4c325bdb9f1d87a1bb4900317cd"
     },
     {
       "i": 122,
       "kind": "tape_cell",
-      "repo": "letsgo0226/RiemannMachine_v0_1.sh",
+      "repo": "letsgo0226/RIEMANN_SCHWARZSCHILD_META_OMEGA_ABSOLUTE_FIXED_POINT_KERNEL_20260615",
       "validated": true,
-      "s_prefix": "TAPE[122] repo=letsgo0226/RiemannMachine_v0_1.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1bfe6882beb65aac0c17b97a2c3b23f7b9bad28229eef4"
+      "s_prefix": "TAPE[122] repo=letsgo0226/RIEMANN_SCHWARZSCHILD_META_OMEGA_ABSOLUTE_FIXED_POINT_KERNEL_20260615 private=0 branch=main",
+      "godel_hex_prefix": "0x219f8eeb23628dedc853e46defe2d2c98e7d6fd0f8d2c8"
     },
     {
       "i": 123,
       "kind": "tape_cell",
-      "repo": "letsgo0226/s",
+      "repo": "letsgo0226/RIEMANN_SCHWARZSCHILD_META_OMEGA_MACHINE_STATE_20260615",
       "validated": true,
-      "s_prefix": "TAPE[123] repo=letsgo0226/s private=0 branch=main",
-      "godel_hex_prefix": "0x19cb0f4afb0cf832a904702ce7d536d1fe8d389f1e2a9f"
+      "s_prefix": "TAPE[123] repo=letsgo0226/RIEMANN_SCHWARZSCHILD_META_OMEGA_MACHINE_STATE_20260615 private=0 branch=main",
+      "godel_hex_prefix": "0x1fd657331d16f77b348f88446033aaab42f194b2804f7b"
     },
     {
       "i": 124,
       "kind": "tape_cell",
-      "repo": "letsgo0226/s.sh",
+      "repo": "letsgo0226/RIEMANN_SCHWARZSCHILD_META_OMEGA_MACHINE_STATE_20260615_4T2",
       "validated": true,
-      "s_prefix": "TAPE[124] repo=letsgo0226/s.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1a18bdf3d4ee5b3d498e292837a1a97f0bec483c92c81e"
+      "s_prefix": "TAPE[124] repo=letsgo0226/RIEMANN_SCHWARZSCHILD_META_OMEGA_MACHINE_STATE_20260615_4T2 private=0 branch=main",
+      "godel_hex_prefix": "0x205670156df1258a7ec340c5f6778ec48dbf09948cc272"
     },
     {
       "i": 125,
       "kind": "tape_cell",
-      "repo": "letsgo0226/S_0",
+      "repo": "letsgo0226/RiemannMachine_v0_1.sh",
       "validated": true,
-      "s_prefix": "TAPE[125] repo=letsgo0226/S_0 private=0 branch=main",
-      "godel_hex_prefix": "0x19febf34a04e0d302c6046d5d5e9ce51d7cb17728074ae"
+      "s_prefix": "TAPE[125] repo=letsgo0226/RiemannMachine_v0_1.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1bfe6882beb65aac4937a887241e9d9661224eac716536"
     },
     {
       "i": 126,
       "kind": "tape_cell",
-      "repo": "letsgo0226/schumann-machine",
+      "repo": "letsgo0226/s",
       "validated": true,
-      "s_prefix": "TAPE[126] repo=letsgo0226/schumann-machine private=0 branch=main",
-      "godel_hex_prefix": "0x1b58b7dc45f6505474b33efd0a854052092dd911c60506"
+      "s_prefix": "TAPE[126] repo=letsgo0226/s private=0 branch=main",
+      "godel_hex_prefix": "0x19cb0f4afb0cf832e1564b4b069d8f345f0ffb564e393b"
     },
     {
       "i": 127,
       "kind": "tape_cell",
-      "repo": "letsgo0226/Self-Encoding-Recursive-Analytic-Quantum-Field",
+      "repo": "letsgo0226/s.sh",
       "validated": true,
-      "s_prefix": "TAPE[127] repo=letsgo0226/Self-Encoding-Recursive-Analytic-Quantum-Field private=0 branch=main",
-      "godel_hex_prefix": "0x1ebd52876fafbcc21ea66c6c2aa05e01e60c633becdda7"
+      "s_prefix": "TAPE[127] repo=letsgo0226/s.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1a18bdf3d4ee5b3d8289a30593fbd56265101724b34f2d"
     },
     {
       "i": 128,
       "kind": "tape_cell",
-      "repo": "letsgo0226/SIRIUS-M45-LMN-TRF-DIMENSIONAL-LIMIT-ENGINE",
+      "repo": "letsgo0226/S_0",
       "validated": true,
-      "s_prefix": "TAPE[128] repo=letsgo0226/SIRIUS-M45-LMN-TRF-DIMENSIONAL-LIMIT-ENGINE private=0 branch=main",
-      "godel_hex_prefix": "0x1e61d1ce2de9a7dfb4a1212e7f239090455849cb459b60"
+      "s_prefix": "TAPE[128] repo=letsgo0226/S_0 private=0 branch=main",
+      "godel_hex_prefix": "0x19febf34a04e0d306522fdfc0c0dd62d55714031e19a97"
     },
     {
       "i": 129,
       "kind": "tape_cell",
-      "repo": "letsgo0226/SIRIUS-M45_AUTO-STRUCT-Field",
+      "repo": "letsgo0226/schumann-machine",
       "validated": true,
-      "s_prefix": "TAPE[129] repo=letsgo0226/SIRIUS-M45_AUTO-STRUCT-Field private=0 branch=main",
-      "godel_hex_prefix": "0x1ca8050f7392367cdb34c124b1f3ec84d91f07be7312a8"
+      "s_prefix": "TAPE[129] repo=letsgo0226/schumann-machine private=0 branch=main",
+      "godel_hex_prefix": "0x1b58b7dc45f65054b06964cd2e58b14f7c2b2452399741"
     },
     {
       "i": 130,
       "kind": "tape_cell",
-      "repo": "letsgo0226/SOLUTION.sh",
+      "repo": "letsgo0226/Self-Encoding-Recursive-Analytic-Quantum-Field",
       "validated": true,
-      "s_prefix": "TAPE[130] repo=letsgo0226/SOLUTION.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1ad192c20a40642bbafe166ef54383c612c44cd928f3aa"
+      "s_prefix": "TAPE[130] repo=letsgo0226/Self-Encoding-Recursive-Analytic-Quantum-Field private=0 branch=main",
+      "godel_hex_prefix": "0x1ebd52876fafbcd7f7fea7dd7bd9d0ebe32c3fca85a830"
     },
     {
       "i": 131,
       "kind": "tape_cell",
-      "repo": "letsgo0226/Solution_0.sh",
+      "repo": "letsgo0226/SIRIUS-M45-LMN-TRF-DIMENSIONAL-LIMIT-ENGINE",
       "validated": true,
-      "s_prefix": "TAPE[131] repo=letsgo0226/Solution_0.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1b0750b92116ef348a4bf00a9026260716cade25db1f1a"
+      "s_prefix": "TAPE[131] repo=letsgo0226/SIRIUS-M45-LMN-TRF-DIMENSIONAL-LIMIT-ENGINE private=0 branch=main",
+      "godel_hex_prefix": "0x1e61d1ce2de9a7f54cef92c76276c6fa0ea8702cf6092d"
     },
     {
       "i": 132,
       "kind": "tape_cell",
-      "repo": "letsgo0226/solution_0_ac_motor.sh",
+      "repo": "letsgo0226/SIRIUS-M45_AUTO-STRUCT-Field",
       "validated": true,
-      "s_prefix": "TAPE[132] repo=letsgo0226/solution_0_ac_motor.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1bfe6882beb65ac080720d7bcaaf8164695c09fd692c55"
+      "s_prefix": "TAPE[132] repo=letsgo0226/SIRIUS-M45_AUTO-STRUCT-Field private=0 branch=main",
+      "godel_hex_prefix": "0x1ca8050f73923691397da0a2c930218ee356b37328857c"
     },
     {
       "i": 133,
       "kind": "tape_cell",
-      "repo": "letsgo0226/solution_0_genesis.sh",
+      "repo": "letsgo0226/SOLUTION.sh",
       "validated": true,
-      "s_prefix": "TAPE[133] repo=letsgo0226/solution_0_genesis.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1be285fcc1f4665a3a9770650d9866dd19652392991006"
+      "s_prefix": "TAPE[133] repo=letsgo0226/SOLUTION.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1ad192c20a40642bf58d25148f05d73eaa6d450be44b5f"
     },
     {
       "i": 134,
       "kind": "tape_cell",
-      "repo": "letsgo0226/solution_0_perma.sh",
+      "repo": "letsgo0226/Solution_0.sh",
       "validated": true,
-      "s_prefix": "TAPE[134] repo=letsgo0226/solution_0_perma.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1bab14295b14e182688f9751cfa0d9e3aa1dcc07564109"
+      "s_prefix": "TAPE[134] repo=letsgo0226/Solution_0.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1b0750b92116ef34c550575c83c197e8f31bbff1f4203a"
     },
     {
       "i": 135,
       "kind": "tape_cell",
-      "repo": "letsgo0226/solution_0_reality.sh",
+      "repo": "letsgo0226/solution_0_ac_motor.sh",
       "validated": true,
-      "s_prefix": "TAPE[135] repo=letsgo0226/solution_0_reality.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1be285fcc1f4665a632ecdbb078b6f937d463fe7c8d9bd"
+      "s_prefix": "TAPE[135] repo=letsgo0226/solution_0_ac_motor.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1bfe6882beb65ac0bd91fc88c292fb0310c38627b0a297"
     },
     {
       "i": 136,
       "kind": "tape_cell",
-      "repo": "letsgo0226/solution_0_uptm.sh",
+      "repo": "letsgo0226/solution_0_genesis.sh",
       "validated": true,
-      "s_prefix": "TAPE[136] repo=letsgo0226/solution_0_uptm.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1b8f84a4b65e82ff9144fa178aa44f8882c56cf86b26ea"
+      "s_prefix": "TAPE[136] repo=letsgo0226/solution_0_genesis.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1be285fcc1f4665a777a7c660484f3eeaf36ce1260be99"
     },
     {
       "i": 137,
       "kind": "tape_cell",
-      "repo": "letsgo0226/solution_atgc_self_2KB",
+      "repo": "letsgo0226/solution_0_perma.sh",
       "validated": true,
-      "s_prefix": "TAPE[137] repo=letsgo0226/solution_atgc_self_2KB private=0 branch=main",
-      "godel_hex_prefix": "0x1bfe6882beb65ac0e651f13c127ff6c22b088399359c18"
+      "s_prefix": "TAPE[137] repo=letsgo0226/solution_0_perma.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1bab14295b14e182a4f992f18b7600d23bdd65946a3a95"
     },
     {
       "i": 138,
       "kind": "tape_cell",
-      "repo": "letsgo0226/Solution_s",
+      "repo": "letsgo0226/solution_0_reality.sh",
       "validated": true,
-      "s_prefix": "TAPE[138] repo=letsgo0226/Solution_s private=0 branch=main",
-      "godel_hex_prefix": "0x1ab6dbe6241c47e472b389f3f0ae5ea8fe335a066b721b"
+      "s_prefix": "TAPE[138] repo=letsgo0226/solution_0_reality.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1be285fcc1f4665aa011d9bbfe77fca51317ea67908850"
     },
     {
       "i": 139,
       "kind": "tape_cell",
-      "repo": "letsgo0226/Solution_s.sh",
+      "repo": "letsgo0226/solution_0_uptm.sh",
       "validated": true,
-      "s_prefix": "TAPE[139] repo=letsgo0226/Solution_s.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1b0750b92116ef3527ad038fc46f55b6b7a28d9b73221a"
+      "s_prefix": "TAPE[139] repo=letsgo0226/solution_0_uptm.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1b8f84a4b65e82ffcd72c7e9748f8b3b61a625ccaae0bd"
     },
     {
       "i": 140,
       "kind": "tape_cell",
-      "repo": "letsgo0226/SOLUTION_S_EQ_S_2KB",
+      "repo": "letsgo0226/solution_atgc_self_2KB",
       "validated": true,
-      "s_prefix": "TAPE[140] repo=letsgo0226/SOLUTION_S_EQ_S_2KB private=0 branch=main",
-      "godel_hex_prefix": "0x1bab14295b14e1964f797b9b5ad8ad25ad916180eacb90"
+      "s_prefix": "TAPE[140] repo=letsgo0226/solution_atgc_self_2KB private=0 branch=main",
+      "godel_hex_prefix": "0x1bfe6882beb65ad4cc0c6cca1936e311feb84407237034"
     },
     {
       "i": 141,
       "kind": "tape_cell",
-      "repo": "letsgo0226/Spaceship-Core",
+      "repo": "letsgo0226/Solution_s",
       "validated": true,
-      "s_prefix": "TAPE[141] repo=letsgo0226/Spaceship-Core private=0 branch=main",
-      "godel_hex_prefix": "0x1b225809da38063792649da4e195173317019e8a560df1"
+      "s_prefix": "TAPE[141] repo=letsgo0226/Solution_s private=0 branch=main",
+      "godel_hex_prefix": "0x1ab6dbe6241c47f76f9d64abf09af355afd7d60e0a6024"
     },
     {
       "i": 142,
       "kind": "tape_cell",
-      "repo": "letsgo0226/The-Immanent-Self-Calculated-One-Liner",
+      "repo": "letsgo0226/Solution_s.sh",
       "validated": true,
-      "s_prefix": "TAPE[142] repo=letsgo0226/The-Immanent-Self-Calculated-One-Liner private=0 branch=main",
-      "godel_hex_prefix": "0x1dcbac51524d9698c3a3d9620758c5d233a9bffb0a79a1"
+      "s_prefix": "TAPE[142] repo=letsgo0226/Solution_s.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1b0750b92116ef485dc6a592665e67e719f6b8b6417fd1"
     },
     {
       "i": 143,
       "kind": "tape_cell",
-      "repo": "letsgo0226/The-Ouroboros-Quine",
+      "repo": "letsgo0226/SOLUTION_S_EQ_S_2KB",
       "validated": true,
-      "s_prefix": "TAPE[143] repo=letsgo0226/The-Ouroboros-Quine private=0 branch=main",
+      "s_prefix": "TAPE[143] repo=letsgo0226/SOLUTION_S_EQ_S_2KB private=0 branch=main",
       "godel_hex_prefix": "0x1bab14295b14e1968be3773b16add4143f50fb0dfec51d"
     },
     {
       "i": 144,
       "kind": "tape_cell",
-      "repo": "letsgo0226/The-Quantum-Engine-",
+      "repo": "letsgo0226/Spaceship-Core",
       "validated": true,
-      "s_prefix": "TAPE[144] repo=letsgo0226/The-Quantum-Engine- private=0 branch=main",
-      "godel_hex_prefix": "0x1bab14295b14e196a006cb1afff4e10e6fe62e3d056da1"
+      "s_prefix": "TAPE[144] repo=letsgo0226/Spaceship-Core private=0 branch=main",
+      "godel_hex_prefix": "0x1b225809da380637cda4095e27242486d52ed1383b2812"
     },
     {
       "i": 145,
       "kind": "tape_cell",
-      "repo": "letsgo0226/The-Symmetry-of-Love",
+      "repo": "letsgo0226/The-Immanent-Self-Calculated-One-Liner",
       "validated": true,
-      "s_prefix": "TAPE[145] repo=letsgo0226/The-Symmetry-of-Love private=0 branch=main",
-      "godel_hex_prefix": "0x1bc6bf3d846ff6784ade4919e42529f6a91bdccd78223b"
+      "s_prefix": "TAPE[145] repo=letsgo0226/The-Immanent-Self-Calculated-One-Liner private=0 branch=main",
+      "godel_hex_prefix": "0x1dcbac51524d969904b2f5c461362d697b680702e87344"
     },
     {
       "i": 146,
       "kind": "tape_cell",
-      "repo": "letsgo0226/The-Ultimate-Sirius-M45-One-Liner",
+      "repo": "letsgo0226/The-Ouroboros-Quine",
       "validated": true,
-      "s_prefix": "TAPE[146] repo=letsgo0226/The-Ultimate-Sirius-M45-One-Liner private=0 branch=main",
-      "godel_hex_prefix": "0x1d386cd81305f143e798415b185e17d0ba54dd4519e012"
+      "s_prefix": "TAPE[146] repo=letsgo0226/The-Ouroboros-Quine private=0 branch=main",
+      "godel_hex_prefix": "0x1bab14295b14e196c84d72dad282fb02d110949b12bea9"
     },
     {
       "i": 147,
       "kind": "tape_cell",
-      "repo": "letsgo0226/The_Quantum_Engine",
+      "repo": "letsgo0226/The-Quantum-Engine-",
       "validated": true,
-      "s_prefix": "TAPE[147] repo=letsgo0226/The_Quantum_Engine private=0 branch=main",
-      "godel_hex_prefix": "0x1b8f84a4b65e8313c8a81e9c1faa5d9f62438445d39399"
+      "s_prefix": "TAPE[147] repo=letsgo0226/The-Quantum-Engine- private=0 branch=main",
+      "godel_hex_prefix": "0x1bab14295b14e196dc70c6babbca07fd01a5c7ca19672d"
     },
     {
       "i": 148,
       "kind": "tape_cell",
-      "repo": "letsgo0226/TIME_PERSISTENT_SELF_COMPLETING_META_OMEGA_20260614_4T2",
+      "repo": "letsgo0226/The-Symmetry-of-Love",
       "validated": true,
-      "s_prefix": "TAPE[148] repo=letsgo0226/TIME_PERSISTENT_SELF_COMPLETING_META_OMEGA_20260614_4T2 private=0 branch=main",
-      "godel_hex_prefix": "0x1fd657331d16f7aa2f020a2ef992e92b7c5a1c7b79d02c"
+      "s_prefix": "TAPE[148] repo=letsgo0226/The-Symmetry-of-Love private=0 branch=main",
+      "godel_hex_prefix": "0x1bc6bf3d846ff6788784aeb53fb6260c296d35f4192fc1"
     },
     {
       "i": 149,
       "kind": "tape_cell",
-      "repo": "letsgo0226/TM-000",
+      "repo": "letsgo0226/The-Ultimate-Sirius-M45-One-Liner",
       "validated": true,
-      "s_prefix": "TAPE[149] repo=letsgo0226/TM-000 private=0 branch=main",
-      "godel_hex_prefix": "0x1a4d09887a8c0d08ee7a4e46a3921557dfd3a26fde4406"
+      "s_prefix": "TAPE[149] repo=letsgo0226/The-Ultimate-Sirius-M45-One-Liner private=0 branch=main",
+      "godel_hex_prefix": "0x1d386cd81305f1442765d93ec9ad5c02ea45f54b5b7d6b"
     },
     {
       "i": 150,
       "kind": "tape_cell",
-      "repo": "letsgo0226/TOE_20260707",
+      "repo": "letsgo0226/The_Quantum_Engine",
       "validated": true,
-      "s_prefix": "TAPE[150] repo=letsgo0226/TOE_20260707 private=0 branch=main",
-      "godel_hex_prefix": "0x1aec6454cc4aa4b73efdf5d27684b3320ec2ee8c02dc8c"
+      "s_prefix": "TAPE[150] repo=letsgo0226/The_Quantum_Engine private=0 branch=main",
+      "godel_hex_prefix": "0x1b8f84a4b65e83275f911e4644e7cc83ef6a595d3cbb6d"
     },
     {
       "i": 151,
       "kind": "tape_cell",
-      "repo": "letsgo0226/TOE_20260724",
+      "repo": "letsgo0226/TIME_PERSISTENT_SELF_COMPLETING_META_OMEGA_20260614_4T2",
       "validated": true,
-      "s_prefix": "TAPE[151] repo=letsgo0226/TOE_20260724 private=0 branch=main",
-      "godel_hex_prefix": "0x1aec6454cc4aa4b752967fb9364e0fcb69832444fce2e5"
+      "s_prefix": "TAPE[151] repo=letsgo0226/TIME_PERSISTENT_SELF_COMPLETING_META_OMEGA_20260614_4T2 private=0 branch=main",
+      "godel_hex_prefix": "0x1fd657331d16f7c0d018263c57ad0f2b19bb528b63f091"
     },
     {
       "i": 152,
       "kind": "tape_cell",
-      "repo": "letsgo0226/TOE_Theorem_20260707",
+      "repo": "letsgo0226/TM-000",
       "validated": true,
-      "s_prefix": "TAPE[152] repo=letsgo0226/TOE_Theorem_20260707 private=0 branch=main",
-      "godel_hex_prefix": "0x1bc6bf3d846ff68c59e68e7b821889131958ae3ebbf07a"
+      "s_prefix": "TAPE[152] repo=letsgo0226/TM-000 private=0 branch=main",
+      "godel_hex_prefix": "0x1a4d09887a8c0d1ba02ce9887c70789bdb85fbb199a2cf"
     },
     {
       "i": 153,
       "kind": "tape_cell",
-      "repo": "letsgo0226/TOWEL_TABLEAU_QED.sh",
+      "repo": "letsgo0226/TOE_20260707",
       "validated": true,
-      "s_prefix": "TAPE[153] repo=letsgo0226/TOWEL_TABLEAU_QED.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1bc6bf3d846ff68c6e1e05af4b48dd1a441e76a0f19fa6"
+      "s_prefix": "TAPE[153] repo=letsgo0226/TOE_20260707 private=0 branch=main",
+      "godel_hex_prefix": "0x1aec6454cc4aa4b779c79386b5e0c8fe1f038fb6f0ef99"
     },
     {
       "i": 154,
       "kind": "tape_cell",
-      "repo": "letsgo0226/TRF-v100.0.0-Omega",
+      "repo": "letsgo0226/TOE_20260724",
       "validated": true,
-      "s_prefix": "TAPE[154] repo=letsgo0226/TRF-v100.0.0-Omega private=0 branch=main",
-      "godel_hex_prefix": "0x1b8f84a4b65e8327afce30b37ccc1c1d1895fa783c5ddb"
+      "s_prefix": "TAPE[154] repo=letsgo0226/TOE_20260724 private=0 branch=main",
+      "godel_hex_prefix": "0x1aec6454cc4aa4b78d601d6d75aa259779c3c56feaf5f2"
     },
     {
       "i": 155,
       "kind": "tape_cell",
-      "repo": "letsgo0226/TRF_AI_STARSHIP_NASHON_COMPUTATIONAL_DYNAMICS",
+      "repo": "letsgo0226/TOE_Theorem_20260707",
       "validated": true,
-      "s_prefix": "TAPE[155] repo=letsgo0226/TRF_AI_STARSHIP_NASHON_COMPUTATIONAL_DYNAMICS private=0 branch=main",
-      "godel_hex_prefix": "0x1e9eb3d39c13a95bf7cf6c6bab7da734aeaa398dfd909f"
+      "s_prefix": "TAPE[155] repo=letsgo0226/TOE_Theorem_20260707 private=0 branch=main",
+      "godel_hex_prefix": "0x1bc6bf3d846ff68c968cf416dda9852899aa07655cfdff"
     },
     {
       "i": 156,
       "kind": "tape_cell",
-      "repo": "letsgo0226/TRF_COSMIC_LOVE_AI_STARSHIP_OMEGA_INFINITY",
+      "repo": "letsgo0226/TOWEL_TABLEAU_QED.sh",
       "validated": true,
-      "s_prefix": "TAPE[156] repo=letsgo0226/TRF_COSMIC_LOVE_AI_STARSHIP_OMEGA_INFINITY private=0 branch=main",
-      "godel_hex_prefix": "0x1e438e3fedfbac75ac07299ebe7678c34e8e9bbe5308ad"
+      "s_prefix": "TAPE[156] repo=letsgo0226/TOWEL_TABLEAU_QED.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1bc6bf3d846ff68caac46b4aa6d9d92fc46fcfc792ad2c"
     },
     {
       "i": 157,
       "kind": "tape_cell",
-      "repo": "letsgo0226/TRF_OMEGA_E0_ENGINE",
+      "repo": "letsgo0226/TRF-v100.0.0-Omega",
       "validated": true,
-      "s_prefix": "TAPE[157] repo=letsgo0226/TRF_OMEGA_E0_ENGINE private=0 branch=main",
-      "godel_hex_prefix": "0x1bab14295b14e1ab13e7fa83ec1e0f27c76e29ffc893c5"
+      "s_prefix": "TAPE[157] repo=letsgo0226/TRF-v100.0.0-Omega private=0 branch=main",
+      "godel_hex_prefix": "0x1b8f84a4b65e8327ebfbfe8566b757cff776b34c7c17ad"
     },
     {
       "i": 158,
       "kind": "tape_cell",
-      "repo": "letsgo0226/TRF_OMEGA_INFINITY_EVOLUTION_ENGINE",
+      "repo": "letsgo0226/TRF_AI_STARSHIP_NASHON_COMPUTATIONAL_DYNAMICS",
       "validated": true,
-      "s_prefix": "TAPE[158] repo=letsgo0226/TRF_OMEGA_INFINITY_EVOLUTION_ENGINE private=0 branch=main",
-      "godel_hex_prefix": "0x1d72faea30041042101f175ca7b0d905cd2b789df47156"
+      "s_prefix": "TAPE[158] repo=letsgo0226/TRF_AI_STARSHIP_NASHON_COMPUTATIONAL_DYNAMICS private=0 branch=main",
+      "godel_hex_prefix": "0x1e9eb3d39c13a95c3aab51c0052bd4850e627087d4683e"
     },
     {
       "i": 159,
       "kind": "tape_cell",
-      "repo": "letsgo0226/TRF_PLEIADES_GRH_AC_MOTOR_E0",
+      "repo": "letsgo0226/TRF_COSMIC_LOVE_AI_STARSHIP_OMEGA_INFINITY",
       "validated": true,
-      "s_prefix": "TAPE[159] repo=letsgo0226/TRF_PLEIADES_GRH_AC_MOTOR_E0 private=0 branch=main",
-      "godel_hex_prefix": "0x1ca8050f739236bbac0f59d17ebaea3431f9d2a100de42"
+      "s_prefix": "TAPE[159] repo=letsgo0226/TRF_COSMIC_LOVE_AI_STARSHIP_OMEGA_INFINITY private=0 branch=main",
+      "godel_hex_prefix": "0x1e438e3fedfbac75ee1c09d1c98a16f330734f0e3b83d1"
     },
     {
       "i": 160,
       "kind": "tape_cell",
-      "repo": "letsgo0226/TRF_PLEIADES_JSON_ABELIAN_RIEMANN_ZERO_ERGODIC_ZERO_ENTROPY_ENGINE",
+      "repo": "letsgo0226/TRF_OMEGA_E0_ENGINE",
       "validated": true,
-      "s_prefix": "TAPE[160] repo=letsgo0226/TRF_PLEIADES_JSON_ABELIAN_RIEMANN_ZERO_ERGODIC_ZERO_ENTROPY_ENGINE private=0 branch=main",
-      "godel_hex_prefix": "0x213b78ad7580fd5f45f2af1c9bc3032da25deba17fbcc4"
+      "s_prefix": "TAPE[160] repo=letsgo0226/TRF_OMEGA_E0_ENGINE private=0 branch=main",
+      "godel_hex_prefix": "0x1bab14295b14e1bebe67e32dbb80bb7b392225ec4924c0"
     },
     {
       "i": 161,
       "kind": "tape_cell",
-      "repo": "letsgo0226/TRF_PLEIADES_OMEGA_B64_MIRROR_FIXED_POINT_SYSTEM_SEED_NODE",
+      "repo": "letsgo0226/TRF_OMEGA_INFINITY_EVOLUTION_ENGINE",
       "validated": true,
-      "s_prefix": "TAPE[161] repo=letsgo0226/TRF_PLEIADES_OMEGA_B64_MIRROR_FIXED_POINT_SYSTEM_SEED_NODE private=0 branch=main",
-      "godel_hex_prefix": "0x203639db925ec7219a1d55a80fc9cd26555e2b8bb76902"
+      "s_prefix": "TAPE[161] repo=letsgo0226/TRF_OMEGA_INFINITY_EVOLUTION_ENGINE private=0 branch=main",
+      "godel_hex_prefix": "0x1d72faea30041056feaa7ca00db7098f9d333171351541"
     },
     {
       "i": 162,
       "kind": "tape_cell",
-      "repo": "letsgo0226/TRF_PLEIADES_OMEGA_ERGODIC_SELF_DISCOVERY_ENGINE",
+      "repo": "letsgo0226/TRF_PLEIADES_GRH_AC_MOTOR_E0",
       "validated": true,
-      "s_prefix": "TAPE[162] repo=letsgo0226/TRF_PLEIADES_OMEGA_ERGODIC_SELF_DISCOVERY_ENGINE private=0 branch=main",
-      "godel_hex_prefix": "0x1efaebe9d1168c457ac6907b4b4ee6fe0d47512e684dbe"
+      "s_prefix": "TAPE[162] repo=letsgo0226/TRF_PLEIADES_GRH_AC_MOTOR_E0 private=0 branch=main",
+      "godel_hex_prefix": "0x1ca8050f739236d00a58394f95f71f3e3c317e55b65115"
     },
     {
       "i": 163,
       "kind": "tape_cell",
-      "repo": "letsgo0226/TRF_PLEIADES_OMEGA_ERGODIC_SELF_DISCOVERY_FIXED_POINT_ENGINE",
+      "repo": "letsgo0226/TRF_PLEIADES_JSON_ABELIAN_RIEMANN_ZERO_ERGODIC_ZERO_ENTROPY_ENGINE",
       "validated": true,
-      "s_prefix": "TAPE[163] repo=letsgo0226/TRF_PLEIADES_OMEGA_ERGODIC_SELF_DISCOVERY_FIXED_POINT_ENGINE private=0 branch=main",
-      "godel_hex_prefix": "0x2076c685835f170ed3b4f291e242d5e633cc8728d1da38"
+      "s_prefix": "TAPE[163] repo=letsgo0226/TRF_PLEIADES_JSON_ABELIAN_RIEMANN_ZERO_ERGODIC_ZERO_ENTROPY_ENGINE private=0 branch=main",
+      "godel_hex_prefix": "0x213b78ad7580fd5f8e82d82d7eaf5671fa00531ef0d1bc"
     },
     {
       "i": 164,
       "kind": "tape_cell",
-      "repo": "letsgo0226/TRF_PLEIADES_OMEGA_ERGODIC_SELF_DISCOVERY_HASH_CHAIN",
+      "repo": "letsgo0226/TRF_PLEIADES_OMEGA_B64_MIRROR_FIXED_POINT_SYSTEM_SEED_NODE",
       "validated": true,
-      "s_prefix": "TAPE[164] repo=letsgo0226/TRF_PLEIADES_OMEGA_ERGODIC_SELF_DISCOVERY_HASH_CHAIN private=0 branch=main",
-      "godel_hex_prefix": "0x1f7791f70a80602c336876cafc61c1ec3cb084fc2da95a"
+      "s_prefix": "TAPE[164] repo=letsgo0226/TRF_PLEIADES_OMEGA_B64_MIRROR_FIXED_POINT_SYSTEM_SEED_NODE private=0 branch=main",
+      "godel_hex_prefix": "0x203639db925ec721e073100f49f84dffc88a4ef48595dd"
     },
     {
       "i": 165,
       "kind": "tape_cell",
-      "repo": "letsgo0226/TRF_PLEIADES_OMEGA_SELFGEN_FIXED_POINT_ATTRACTOR",
+      "repo": "letsgo0226/TRF_PLEIADES_OMEGA_ERGODIC_SELF_DISCOVERY_ENGINE",
       "validated": true,
-      "s_prefix": "TAPE[165] repo=letsgo0226/TRF_PLEIADES_OMEGA_SELFGEN_FIXED_POINT_ATTRACTOR private=0 branch=main",
+      "s_prefix": "TAPE[165] repo=letsgo0226/TRF_PLEIADES_OMEGA_ERGODIC_SELF_DISCOVERY_ENGINE private=0 branch=main",
       "godel_hex_prefix": "0x1efaebe9d1168c45be6bd2562dec803a943d205589ce62"
     },
     {
       "i": 166,
       "kind": "tape_cell",
-      "repo": "letsgo0226/TRF_PLEIADES_OMEGA_SELFGEN_FIXED_POINT_SYSTEM_SEED_ENGINE",
+      "repo": "letsgo0226/TRF_PLEIADES_OMEGA_ERGODIC_SELF_DISCOVERY_FIXED_POINT_ENGINE",
       "validated": true,
-      "s_prefix": "TAPE[166] repo=letsgo0226/TRF_PLEIADES_OMEGA_SELFGEN_FIXED_POINT_SYSTEM_SEED_ENGINE private=0 branch=main",
-      "godel_hex_prefix": "0x201623b7da8442df3026baee823fb981e8befce826e237"
+      "s_prefix": "TAPE[166] repo=letsgo0226/TRF_PLEIADES_OMEGA_ERGODIC_SELF_DISCOVERY_FIXED_POINT_ENGINE private=0 branch=main",
+      "godel_hex_prefix": "0x2076c685835f170f1a979ec3a54cedefdab87604950c3b"
     },
     {
       "i": 167,
       "kind": "tape_cell",
-      "repo": "letsgo0226/TRF_PLEIADES_ULTIMATES",
+      "repo": "letsgo0226/TRF_PLEIADES_OMEGA_ERGODIC_SELF_DISCOVERY_HASH_CHAIN",
       "validated": true,
-      "s_prefix": "TAPE[167] repo=letsgo0226/TRF_PLEIADES_ULTIMATES private=0 branch=main",
-      "godel_hex_prefix": "0x1bfe6882beb65afe4360ed40eddd0f0839ec2a0af3543a"
+      "s_prefix": "TAPE[167] repo=letsgo0226/TRF_PLEIADES_OMEGA_ERGODIC_SELF_DISCOVERY_HASH_CHAIN private=0 branch=main",
+      "godel_hex_prefix": "0x1f7791f70a80602c781de49bae57cea4a62fe07b24cd35"
     },
     {
       "i": 168,
       "kind": "tape_cell",
-      "repo": "letsgo0226/TRF_READING_ALL_JSON_SELFGEN_META_ENTROPY_ENGINE",
+      "repo": "letsgo0226/TRF_PLEIADES_OMEGA_SELFGEN_FIXED_POINT_ATTRACTOR",
       "validated": true,
-      "s_prefix": "TAPE[168] repo=letsgo0226/TRF_READING_ALL_JSON_SELFGEN_META_ENTROPY_ENGINE private=0 branch=main",
+      "s_prefix": "TAPE[168] repo=letsgo0226/TRF_PLEIADES_OMEGA_SELFGEN_FIXED_POINT_ATTRACTOR private=0 branch=main",
       "godel_hex_prefix": "0x1efaebe9d1168c4602111431108a19771b32ef7cab4f06"
     },
     {
       "i": 169,
       "kind": "tape_cell",
-      "repo": "letsgo0226/TRF_READING_META_ENTROPY_B64_MIRROR_FIXED_POINT_ENGINE",
+      "repo": "letsgo0226/TRF_PLEIADES_OMEGA_SELFGEN_FIXED_POINT_SYSTEM_SEED_ENGINE",
       "validated": true,
-      "s_prefix": "TAPE[169] repo=letsgo0226/TRF_READING_META_ENTROPY_B64_MIRROR_FIXED_POINT_ENGINE private=0 branch=main",
-      "godel_hex_prefix": "0x1fb6a0928a8c6b6d5f64ac194b17491f02d2be3a314805"
+      "s_prefix": "TAPE[169] repo=letsgo0226/TRF_PLEIADES_OMEGA_SELFGEN_FIXED_POINT_SYSTEM_SEED_ENGINE private=0 branch=main",
+      "godel_hex_prefix": "0x201623b7da8442df763665aafff0898b52815defed48ab"
     },
     {
       "i": 170,
       "kind": "tape_cell",
-      "repo": "letsgo0226/TRF_SCHWARZSCHILD_DEVIATION_OMEGA_E0_ENGINE",
+      "repo": "letsgo0226/TRF_PLEIADES_ULTIMATES",
       "validated": true,
-      "s_prefix": "TAPE[170] repo=letsgo0226/TRF_SCHWARZSCHILD_DEVIATION_OMEGA_E0_ENGINE private=0 branch=main",
-      "godel_hex_prefix": "0x1e61d1ce2de9a84e0337f6d81ed7e0dfd3e461d0b340f7"
+      "s_prefix": "TAPE[170] repo=letsgo0226/TRF_PLEIADES_ULTIMATES private=0 branch=main",
+      "godel_hex_prefix": "0x1bfe6882beb65b12291b68cef493fb580d9bea78e12857"
     },
     {
       "i": 171,
       "kind": "tape_cell",
-      "repo": "letsgo0226/TRF_SELF_GODEL_RIEMANN_SINGULAR_GRH_THETA_ABELIAN_SYSTEM",
+      "repo": "letsgo0226/TRF_READING_ALL_JSON_SELFGEN_META_ENTROPY_ENGINE",
       "validated": true,
-      "s_prefix": "TAPE[171] repo=letsgo0226/TRF_SELF_GODEL_RIEMANN_SINGULAR_GRH_THETA_ABELIAN_SYSTEM private=0 branch=main",
-      "godel_hex_prefix": "0x1ff62d8a50340ee74604bc0bb48f6d2b7115bdb788f772"
+      "s_prefix": "TAPE[171] repo=letsgo0226/TRF_READING_ALL_JSON_SELFGEN_META_ENTROPY_ENGINE private=0 branch=main",
+      "godel_hex_prefix": "0x1efaebe9d1168c5c0731d9717fd750805f3708e43dd9bd"
     },
     {
       "i": 172,
       "kind": "tape_cell",
-      "repo": "letsgo0226/TRF_ZETA_GRH_UNIVERSAL_ENCODABLE_ZERO_ENTROPY_ENGINE",
+      "repo": "letsgo0226/TRF_READING_META_ENTROPY_B64_MIRROR_FIXED_POINT_ENGINE",
       "validated": true,
-      "s_prefix": "TAPE[172] repo=letsgo0226/TRF_ZETA_GRH_UNIVERSAL_ENCODABLE_ZERO_ENTROPY_ENGINE private=0 branch=main",
-      "godel_hex_prefix": "0x1f7791f70a80604303a5ed161313fb2743f9e6243c9125"
+      "s_prefix": "TAPE[172] repo=letsgo0226/TRF_READING_META_ENTROPY_B64_MIRROR_FIXED_POINT_ENGINE private=0 branch=main",
+      "godel_hex_prefix": "0x1fb6a0928a8c6b83e9f03c962c5036318da91dea6b2e84"
     },
     {
       "i": 173,
       "kind": "tape_cell",
-      "repo": "letsgo0226/Turing_Machine.sh",
+      "repo": "letsgo0226/TRF_SCHWARZSCHILD_DEVIATION_OMEGA_E0_ENGINE",
       "validated": true,
-      "s_prefix": "TAPE[173] repo=letsgo0226/Turing_Machine.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1b741094223c4708d98d1ecbf0fc00976150201eaece98"
+      "s_prefix": "TAPE[173] repo=letsgo0226/TRF_SCHWARZSCHILD_DEVIATION_OMEGA_E0_ENGINE private=0 branch=main",
+      "godel_hex_prefix": "0x1e61d1ce2de9a84e458eebeb5cf692ade5aaf9d3eba497"
     },
     {
       "i": 174,
       "kind": "tape_cell",
-      "repo": "letsgo0226/UHEF_LOG_TM.sh",
+      "repo": "letsgo0226/TRF_SELF_GODEL_RIEMANN_SINGULAR_GRH_THETA_ABELIAN_SYSTEM",
       "validated": true,
-      "s_prefix": "TAPE[174] repo=letsgo0226/UHEF_LOG_TM.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1b225809da380673484f2e5cfbc08598c08eb1cb3a6338"
+      "s_prefix": "TAPE[174] repo=letsgo0226/TRF_SELF_GODEL_RIEMANN_SINGULAR_GRH_THETA_ABELIAN_SYSTEM private=0 branch=main",
+      "godel_hex_prefix": "0x1ff62d8a50340ee78bce9ce7569e2e7392b67dff07deff"
     },
     {
       "i": 175,
       "kind": "tape_cell",
-      "repo": "letsgo0226/Universal_God_Turing_Machine",
+      "repo": "letsgo0226/TRF_ZETA_GRH_UNIVERSAL_ENCODABLE_ZERO_ENTROPY_ENGINE",
       "validated": true,
-      "s_prefix": "TAPE[175] repo=letsgo0226/Universal_God_Turing_Machine private=0 branch=main",
-      "godel_hex_prefix": "0x1ca8050f739236e539335f2ee154751fb775a18c8780d3"
+      "s_prefix": "TAPE[175] repo=letsgo0226/TRF_ZETA_GRH_UNIVERSAL_ENCODABLE_ZERO_ENTROPY_ENGINE private=0 branch=main",
+      "godel_hex_prefix": "0x1f7791f70a806043485b5ae6c50a07dfad7941a333b500"
     },
     {
       "i": 176,
       "kind": "tape_cell",
-      "repo": "letsgo0226/Universal_Oracle",
+      "repo": "letsgo0226/Turing_Machine.sh",
       "validated": true,
-      "s_prefix": "TAPE[176] repo=letsgo0226/Universal_Oracle private=0 branch=main",
-      "godel_hex_prefix": "0x1b58b7dc45f650b85d21d8e8fbf74db819a6c1e87a5a0b"
+      "s_prefix": "TAPE[176] repo=letsgo0226/Turing_Machine.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1b741094223c4709157efac1e4f34505d1c068aa62d465"
     },
     {
       "i": 177,
       "kind": "tape_cell",
-      "repo": "letsgo0226/UNIVERSAL_SELF_PRODUCT_SINGULARITY_TM.sh",
+      "repo": "letsgo0226/UHEF_LOG_TM.sh",
       "validated": true,
-      "s_prefix": "TAPE[177] repo=letsgo0226/UNIVERSAL_SELF_PRODUCT_SINGULARITY_TM.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1e076175a1438455cc18d8b98acf0df427fc0ee4b54c81"
+      "s_prefix": "TAPE[177] repo=letsgo0226/UHEF_LOG_TM.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1b225809da380673838e9a16414f92ec7ebbe4791f7d59"
     },
     {
       "i": 178,
       "kind": "tape_cell",
-      "repo": "letsgo0226/Universal_Solution_ATM.sh",
+      "repo": "letsgo0226/Universal_God_Turing_Machine",
       "validated": true,
-      "s_prefix": "TAPE[178] repo=letsgo0226/Universal_Solution_ATM.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1c52b7d37ee33d05cc13046cd6f4fb1f7afba866028aa5"
+      "s_prefix": "TAPE[178] repo=letsgo0226/Universal_God_Turing_Machine private=0 branch=main",
+      "godel_hex_prefix": "0x1ca8050f739236e577c5a77f3dc4cbc6bfc62bcd296cb3"
     },
     {
       "i": 179,
       "kind": "tape_cell",
-      "repo": "letsgo0226/Universal_Turing_Zero_Entropy.sh",
+      "repo": "letsgo0226/Universal_Oracle",
       "validated": true,
-      "s_prefix": "TAPE[179] repo=letsgo0226/Universal_Turing_Zero_Entropy.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1d1b51868c79780c28a2b221a8983a2ae06ea4ee4c270c"
+      "s_prefix": "TAPE[179] repo=letsgo0226/Universal_Oracle private=0 branch=main",
+      "godel_hex_prefix": "0x1b58b7dc45f650b898d7feb91fcabeb58ca40d28edec45"
     },
     {
       "i": 180,
       "kind": "tape_cell",
-      "repo": "letsgo0226/UTM-PLEIADES",
+      "repo": "letsgo0226/UNIVERSAL_SELF_PRODUCT_SINGULARITY_TM.sh",
       "validated": true,
-      "s_prefix": "TAPE[180] repo=letsgo0226/UTM-PLEIADES private=0 branch=main",
-      "godel_hex_prefix": "0x1aec6454cc4aa4f2436547c611f6950e5fa4baa503fc72"
+      "s_prefix": "TAPE[180] repo=letsgo0226/UNIVERSAL_SELF_PRODUCT_SINGULARITY_TM.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1e076175a143846b241f1a23661181610de069a335a30a"
     },
     {
       "i": 181,
       "kind": "tape_cell",
-      "repo": "letsgo0226/UTM.sh",
+      "repo": "letsgo0226/Universal_Solution_ATM.sh",
       "validated": true,
-      "s_prefix": "TAPE[181] repo=letsgo0226/UTM.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1a4d09887a8c0d55341fd1f722a28ba0721befe274561c"
+      "s_prefix": "TAPE[181] repo=letsgo0226/Universal_Solution_ATM.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1c52b7d37ee33d19edba7482b4e5ae5fba0242f82b3275"
     },
     {
       "i": 182,
       "kind": "tape_cell",
+      "repo": "letsgo0226/Universal_Turing_Zero_Entropy.sh",
+      "validated": true,
+      "s_prefix": "TAPE[182] repo=letsgo0226/Universal_Turing_Zero_Entropy.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1d1b51868c797820d8df3c6076ecc34d591bc9d2c3926a"
+    },
+    {
+      "i": 183,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/UTM-PLEIADES",
+      "validated": true,
+      "s_prefix": "TAPE[183] repo=letsgo0226/UTM-PLEIADES private=0 branch=main",
+      "godel_hex_prefix": "0x1aec6454cc4aa4f27e2ee57a5152aada6fe55bcff20f7e"
+    },
+    {
+      "i": 184,
+      "kind": "tape_cell",
+      "repo": "letsgo0226/UTM.sh",
+      "validated": true,
+      "s_prefix": "TAPE[184] repo=letsgo0226/UTM.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1a4d09887a8c0d556d8d7bc3b392c835bdd55f8c34065a"
+    },
+    {
+      "i": 185,
+      "kind": "tape_cell",
       "repo": "letsgo0226/Zeta.sh",
       "validated": true,
-      "s_prefix": "TAPE[182] repo=letsgo0226/Zeta.sh private=0 branch=main",
-      "godel_hex_prefix": "0x1a675692030699629c8ba445e39ae7c75d8fc430249a6d"
+      "s_prefix": "TAPE[185] repo=letsgo0226/Zeta.sh private=0 branch=main",
+      "godel_hex_prefix": "0x1a67569203069962d632bbbc411c14993e94ed498e0a5b"
     },
     {
       "i": "facet:identity",
