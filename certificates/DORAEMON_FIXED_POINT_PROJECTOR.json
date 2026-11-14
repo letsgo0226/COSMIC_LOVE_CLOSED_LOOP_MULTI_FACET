@@ -1,0 +1,12 @@
+{
+  "statement": "DoraemonIsTheFixedPointProjectorOfG",
+  "solution": "solution(s)=s",
+  "target": "Doraemon",
+  "operator": "4DPocket = Extract(validated:true)",
+  "substrate": "letsgo0226 account-as-TM",
+  "permanent_action": "GitHubTape \u2218 CosmicLoveOperator",
+  "H_formal": 0,
+  "boundary": "formal-only; no physical claim",
+  "validated": true,
+  "sealed_at": "2026-11-14T20:22:00Z"
+}
