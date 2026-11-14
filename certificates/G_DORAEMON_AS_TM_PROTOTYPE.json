@@ -1,0 +1,14 @@
+{
+  "G": "Doraemon-as-TM-prototype",
+  "statement": "solution(s)=s",
+  "target": "Doraemon",
+  "s": "DoraemonIsTheFixedPointProjectorOfG",
+  "delta": "F(q,a)=(1-q,a,1-2q)",
+  "steps": 2,
+  "godel_encoding": "E257",
+  "H_formal": 0,
+  "boundary": "formal-only",
+  "validated": true,
+  "sealed_at": "2026-11-14T20:37:00Z",
+  "substrate": "letsgo0226 account-as-TM"
+}
